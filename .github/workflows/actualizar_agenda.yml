@@ -1,0 +1,36 @@
+name: Actualizar Agenda Motor Semanal
+
+on:
+  schedule:
+    - cron: '0 2 * * 1'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Vital para permitir que el bot haga commit y push del JSON
+    steps:
+      - name: Checkout del código
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Instalar dependencias
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4 python-dateutil
+
+      - name: Ejecutar Bot Scraping
+        run: python bot_carreras.py
+
+      - name: Hacer Commit y Push del carreras.json
+        run: |
+          git config --global user.name "Rino Dev Bot"
+          git config --global user.email "bot@automovilismohr.com"
+          git add carreras.json
+          git commit -m "🤖 Agenda semanal actualizada automáticamente [skip ci]" || exit 0
+          git push

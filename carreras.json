@@ -1,0 +1,377 @@
+[
+  {
+    "semana": 1,
+    "tituloSemana": "Fin de semana 06/09",
+    "estado": "FIN DE SEMANA ACTUAL",
+    "eventos": [
+      {
+        "categoria": "FORMULA 1",
+        "categoriaClase": "f1",
+        "evento": "Italian Grand Prix",
+        "circuito": "Autodromo Nazionale di Monza",
+        "logoUrl": "",
+        "sesiones": [
+          {
+            "dia": "VIERNES 04/09",
+            "nombre": "F1 - Prácticas Libres 1",
+            "fechaUtc": "2026-09-04T10:30:00Z",
+            "horaOriginal": "12:30 Local (CEST)",
+            "destacado": false
+          },
+          {
+            "dia": "VIERNES 04/09",
+            "nombre": "F1 - Prácticas Libres 2",
+            "fechaUtc": "2026-09-04T14:00:00Z",
+            "horaOriginal": "16:00 Local (CEST)",
+            "destacado": false
+          },
+          {
+            "dia": "SÁBADO 05/09",
+            "nombre": "F1 - Prácticas Libres 3",
+            "fechaUtc": "2026-09-05T10:30:00Z",
+            "horaOriginal": "12:30 Local (CEST)",
+            "destacado": false
+          },
+          {
+            "dia": "SÁBADO 05/09",
+            "nombre": "F1 - Clasificación",
+            "fechaUtc": "2026-09-05T14:00:00Z",
+            "horaOriginal": "16:00 Local (CEST)",
+            "destacado": true
+          },
+          {
+            "dia": "DOMINGO 06/09",
+            "nombre": "F1 - Carrera Principal",
+            "fechaUtc": "2026-09-06T13:00:00Z",
+            "horaOriginal": "15:00 Local (CEST)",
+            "destacado": true
+          }
+        ]
+      },
+      {
+        "categoria": "IndyCar & Indy NXT",
+        "categoriaClase": "indy",
+        "evento": "Big Machine Music City Grand Prix (Final)",
+        "circuito": "Nashville Superspeedway (Tennessee)",
+        "logoUrl": "",
+        "sesiones": [
+          {
+            "dia": "SÁBADO 05/09",
+            "nombre": "Indy NXT - Entrenamientos y Clasificación",
+            "fechaUtc": "2026-09-05T18:00:00Z",
+            "horaOriginal": "18:00 UTC",
+            "destacado": false
+          },
+          {
+            "dia": "SÁBADO 05/09",
+            "nombre": "IndyCar - Clasificación / Fast Six",
+            "fechaUtc": "2026-09-05T20:00:00Z",
+            "horaOriginal": "20:00 UTC",
+            "destacado": false
+          },
+          {
+            "dia": "DOMINGO 06/09",
+            "nombre": "Indy NXT - Carrera",
+            "fechaUtc": "2026-09-06T16:00:00Z",
+            "horaOriginal": "16:00 UTC",
+            "destacado": false
+          },
+          {
+            "dia": "DOMINGO 06/09",
+            "nombre": "IndyCar - Carrera (Big Machine Music City Grand Prix (Final))",
+            "fechaUtc": "2026-09-06T19:00:00Z",
+            "horaOriginal": "19:00 UTC",
+            "destacado": true
+          }
+        ]
+      },
+      {
+        "categoria": "NASCAR CUP SERIES",
+        "categoriaClase": "nascar",
+        "evento": "Cook Out Southern 500",
+        "circuito": "Darlington Raceway (EE.UU.)",
+        "logoUrl": "",
+        "sesiones": [
+          {
+            "dia": "SÁBADO 05/09",
+            "nombre": "NASCAR Xfinity Series - Clasificación",
+            "fechaUtc": "2026-09-05T18:35:00Z",
+            "horaOriginal": "18:35 UTC",
+            "destacado": false
+          },
+          {
+            "dia": "SÁBADO 05/09",
+            "nombre": "NASCAR Cup Series - Clasificación",
+            "fechaUtc": "2026-09-05T21:05:00Z",
+            "horaOriginal": "21:05 UTC",
+            "destacado": true
+          },
+          {
+            "dia": "SÁBADO 05/09",
+            "nombre": "NASCAR Xfinity Series - Carrera (Fleetio 200)",
+            "fechaUtc": "2026-09-05T23:30:00Z",
+            "horaOriginal": "23:30 UTC",
+            "destacado": false
+          },
+          {
+            "dia": "DOMINGO 06/09",
+            "nombre": "NASCAR Cup Series - Carrera - Principal (Cook Out Southern 500)",
+            "fechaUtc": "2026-09-06T21:00:00Z",
+            "horaOriginal": "21:00 UTC",
+            "destacado": true
+          }
+        ]
+      },
+      {
+        "categoria": "WEC",
+        "categoriaClase": "wec",
+        "evento": "Lone Star Le Mans (COTA)",
+        "circuito": "Circuit of the Americas (Austin, EE. UU.)",
+        "logoUrl": "",
+        "sesiones": [
+          {
+            "dia": "VIERNES 04/09",
+            "nombre": "Entrenamientos Libres",
+            "fechaUtc": "2026-09-04T10:00:00Z",
+            "horaOriginal": "10:00 UTC",
+            "destacado": false
+          },
+          {
+            "dia": "SÁBADO 05/09",
+            "nombre": "Clasificación & Hyperpole",
+            "fechaUtc": "2026-09-05T13:00:00Z",
+            "horaOriginal": "13:00 UTC",
+            "destacado": false
+          },
+          {
+            "dia": "DOMINGO 06/09",
+            "nombre": "Carrera (Lone Star Le Mans (COTA))",
+            "fechaUtc": "2026-09-06T18:00:00Z",
+            "horaOriginal": "18:00 UTC",
+            "destacado": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "semana": 2,
+    "tituloSemana": "Fin de semana 13/09",
+    "estado": "PRÓXIMO FIN DE SEMANA",
+    "eventos": [
+      {
+        "categoria": "FORMULA 1",
+        "categoriaClase": "f1",
+        "evento": "Spanish Grand Prix",
+        "circuito": "Madring",
+        "logoUrl": "",
+        "sesiones": [
+          {
+            "dia": "VIERNES 11/09",
+            "nombre": "F1 - Prácticas Libres 1",
+            "fechaUtc": "2026-09-11T11:30:00Z",
+            "horaOriginal": "11:30 Local (UTC)",
+            "destacado": false
+          },
+          {
+            "dia": "VIERNES 11/09",
+            "nombre": "F1 - Prácticas Libres 2",
+            "fechaUtc": "2026-09-11T15:00:00Z",
+            "horaOriginal": "15:00 Local (UTC)",
+            "destacado": false
+          },
+          {
+            "dia": "SÁBADO 12/09",
+            "nombre": "F1 - Prácticas Libres 3",
+            "fechaUtc": "2026-09-12T10:30:00Z",
+            "horaOriginal": "10:30 Local (UTC)",
+            "destacado": false
+          },
+          {
+            "dia": "SÁBADO 12/09",
+            "nombre": "F1 - Clasificación",
+            "fechaUtc": "2026-09-12T14:00:00Z",
+            "horaOriginal": "14:00 Local (UTC)",
+            "destacado": true
+          },
+          {
+            "dia": "DOMINGO 13/09",
+            "nombre": "F1 - Carrera Principal",
+            "fechaUtc": "2026-09-13T13:00:00Z",
+            "horaOriginal": "13:00 Local (UTC)",
+            "destacado": true
+          }
+        ]
+      },
+      {
+        "categoria": "WRC",
+        "categoriaClase": "wrc",
+        "evento": "Rally Chile Bio Bío",
+        "circuito": "Biobío (Chile)",
+        "logoUrl": "",
+        "sesiones": [
+          {
+            "dia": "JUEVES 10/09",
+            "nombre": "Shakedown",
+            "fechaUtc": "2026-09-10T08:00:00Z",
+            "horaOriginal": "08:00 UTC",
+            "destacado": false
+          },
+          {
+            "dia": "SÁBADO 12/09",
+            "nombre": "Etapa - Tramos Especiales",
+            "fechaUtc": "2026-09-12T07:00:00Z",
+            "horaOriginal": "07:00 UTC",
+            "destacado": false
+          },
+          {
+            "dia": "DOMINGO 13/09",
+            "nombre": "Wolf Power Stage Final",
+            "fechaUtc": "2026-09-13T10:15:00Z",
+            "horaOriginal": "10:15 UTC",
+            "destacado": true
+          }
+        ]
+      },
+      {
+        "categoria": "NASCAR CUP SERIES",
+        "categoriaClase": "nascar",
+        "evento": "Enjoy Illinois 300",
+        "circuito": "World Wide Technology Raceway (EE.UU.)",
+        "logoUrl": "",
+        "sesiones": [
+          {
+            "dia": "SÁBADO 12/09",
+            "nombre": "NASCAR Xfinity Series - Clasificación",
+            "fechaUtc": "2026-09-12T18:05:00Z",
+            "horaOriginal": "18:05 UTC",
+            "destacado": false
+          },
+          {
+            "dia": "SÁBADO 12/09",
+            "nombre": "NASCAR Cup Series - Clasificación",
+            "fechaUtc": "2026-09-12T20:35:00Z",
+            "horaOriginal": "20:35 UTC",
+            "destacado": true
+          },
+          {
+            "dia": "SÁBADO 12/09",
+            "nombre": "NASCAR Xfinity Series - Carrera (Nu Way 225 Powered by Bobcat and Sauced by Blues Hog)",
+            "fechaUtc": "2026-09-12T23:30:00Z",
+            "horaOriginal": "23:30 UTC",
+            "destacado": false
+          },
+          {
+            "dia": "DOMINGO 13/09",
+            "nombre": "NASCAR Cup Series - Carrera - Principal (Enjoy Illinois 300)",
+            "fechaUtc": "2026-09-13T19:00:00Z",
+            "horaOriginal": "19:00 UTC",
+            "destacado": true
+          }
+        ]
+      },
+      {
+        "categoria": "Turismo Carretera & TC Pista",
+        "categoriaClase": "tc",
+        "evento": "Turismo Carretera - Fecha 11",
+        "circuito": "Autódromo Rosendo Hernández - San Luis (Comienzo Copa de Oro)",
+        "logoUrl": "",
+        "sesiones": [
+          {
+            "dia": "SÁBADO 12/09",
+            "nombre": "TC Pista - Clasificación",
+            "fechaUtc": "2026-09-12T11:00:00Z",
+            "horaOriginal": "11:00 UTC",
+            "destacado": false
+          },
+          {
+            "dia": "SÁBADO 12/09",
+            "nombre": "TC - Entrenamientos & Clasificación",
+            "fechaUtc": "2026-09-12T13:00:00Z",
+            "horaOriginal": "13:00 UTC",
+            "destacado": false
+          },
+          {
+            "dia": "DOMINGO 13/09",
+            "nombre": "TC Pista - Series / Final",
+            "fechaUtc": "2026-09-13T11:00:00Z",
+            "horaOriginal": "11:00 UTC",
+            "destacado": false
+          },
+          {
+            "dia": "DOMINGO 13/09",
+            "nombre": "TC - Series Clasificatorias",
+            "fechaUtc": "2026-09-13T13:00:00Z",
+            "horaOriginal": "13:00 UTC",
+            "destacado": false
+          },
+          {
+            "dia": "DOMINGO 13/09",
+            "nombre": "Turismo Carretera - Fecha 11 - Final",
+            "fechaUtc": "2026-09-13T17:00:00Z",
+            "horaOriginal": "17:00 UTC",
+            "destacado": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "semana": 3,
+    "tituloSemana": "Fin de semana 19/09",
+    "estado": "FUTURO",
+    "eventos": [
+      {
+        "categoria": "NASCAR CUP SERIES",
+        "categoriaClase": "nascar",
+        "evento": "Bass Pro Shops Night Race",
+        "circuito": "Bristol Motor Speedway (EE.UU.)",
+        "logoUrl": "",
+        "sesiones": [
+          {
+            "dia": "JUEVES 17/09",
+            "nombre": "NASCAR Craftsman Truck Series - Clasificación",
+            "fechaUtc": "2026-09-17T20:05:00Z",
+            "horaOriginal": "20:05 UTC",
+            "destacado": false
+          },
+          {
+            "dia": "VIERNES 18/09",
+            "nombre": "NASCAR Craftsman Truck Series - Carrera (UNOH 250 presented by Ohio Logistics)",
+            "fechaUtc": "2026-09-18T00:00:00Z",
+            "horaOriginal": "00:00 UTC",
+            "destacado": false
+          },
+          {
+            "dia": "VIERNES 18/09",
+            "nombre": "NASCAR Xfinity Series - Clasificación",
+            "fechaUtc": "2026-09-18T19:05:00Z",
+            "horaOriginal": "19:05 UTC",
+            "destacado": false
+          },
+          {
+            "dia": "VIERNES 18/09",
+            "nombre": "NASCAR Cup Series - Clasificación",
+            "fechaUtc": "2026-09-18T21:35:00Z",
+            "horaOriginal": "21:35 UTC",
+            "destacado": true
+          },
+          {
+            "dia": "VIERNES 18/09",
+            "nombre": "NASCAR Xfinity Series - Carrera (Food City 300)",
+            "fechaUtc": "2026-09-18T23:30:00Z",
+            "horaOriginal": "23:30 UTC",
+            "destacado": false
+          },
+          {
+            "dia": "SÁBADO 19/09",
+            "nombre": "NASCAR Cup Series - Carrera - Principal (Bass Pro Shops Night Race)",
+            "fechaUtc": "2026-09-19T23:30:00Z",
+            "horaOriginal": "23:30 UTC",
+            "destacado": true
+          }
+        ]
+      }
+    ]
+  }
+]

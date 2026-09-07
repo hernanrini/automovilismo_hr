@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+
+/* ==========================================================================
+   RESET & ESTILOS GENERALES
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: #0b0f19;
+    color: #f1f5f9;
+    padding: 30px 20px;
+    min-height: 100vh;
+}
+
+/* ==========================================================================
+   HEADER PRINCIPAL & BANNER EN PILL
+   ========================================================================== */
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 1rem 1rem 0;
+    background: radial-gradient(circle at top, rgba(239, 68, 68, 0.08) 0%, transparent 70%);
+}
+
+.logo {
+    font-size: 2.8rem;
+    font-weight: 900;
+    letter-spacing: -1px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.logo span,
+.logo-hr {
+    color: #ef4444;
+    text-shadow: 0 0 12px rgba(239, 68, 68, 0.4);
+}
+
+.tagline,
+.subtitulo {
+    color: #64748b;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 6px;
+}
+
+/* Alerta / Banner de Pruebas en formato Pill */
+.banner-pruebas-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(17, 24, 39, 0.8);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    padding: 6px 16px;
+    border-radius: 50px;
+    margin-top: 1.2rem;
+    font-size: 0.8rem;
+    color: #94a3b8;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.badge-pill {
+    background: #ef4444;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 0.65rem;
+    padding: 2px 8px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+}
+
+/* Estilo legacy de alerta si se usa fuera del header */
+.banner-pruebas {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/* ==========================================================================
+   CONTENEDOR PRINCIPAL Y BLOQUES DE FIN DE SEMANA
+   ========================================================================== */
+.contenedor-principal {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.bloque-finde {
+    background-color: #111827;
+    border: 1px solid #1f2937;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+}
+
+.bloque-finde.actual {
+    border: 1px solid #ef4444;
+    box-shadow: 0 0 20px rgba(239, 68, 68, 0.15);
+}
+
+.header-finde {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #1f2937;
+}
+
+.header-finde h2 {
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+.badge-semana {
+    background-color: #ef4444;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 800;
+    padding: 6px 14px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+}
+
+.badge-semana.proximo {
+    background-color: #374151;
+    color: #9ca3af;
+}
+
+/* ==========================================================================
+   GRID Y TARJETAS DE CATEGORÍAS
+   ========================================================================== */
+.grid-tarjetas {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tarjeta-carrera {
+    background-color: #1a2234;
+    border-radius: 12px;
+    border-left: 5px solid #64748b;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.header-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.categoria-tag {
+    font-size: 0.75rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.logo-categoria {
+    max-height: 24px;
+    max-width: 80px;
+    object-fit: contain;
+}
+
+.tarjeta-carrera h3 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.circuito {
+    font-size: 0.85rem;
+    color: #94a3b8;
+}
+
+/* ==========================================================================
+   PERSONALIZACIÓN POR CATEGORÍA (15 CATEGORÍAS)
+   ========================================================================== */
+
+/* Bordes Laterales */
+.tarjeta-carrera.f1 { border-left-color: #ef4444; }
+.tarjeta-carrera.f2 { border-left-color: #3b82f6; }
+.tarjeta-carrera.f3 { border-left-color: #f97316; }
+.tarjeta-carrera.motogp { border-left-color: #dc2626; }
+.tarjeta-carrera.wec { border-left-color: #0284c7; }
+.tarjeta-carrera.indy { border-left-color: #8b5cf6; }
+.tarjeta-carrera.fe { border-left-color: #06b6d4; }
+.tarjeta-carrera.wrc { border-left-color: #f59e0b; }
+.tarjeta-carrera.nascar { border-left-color: #eab308; }
+.tarjeta-carrera.dtm { border-left-color: #64748b; }
+.tarjeta-carrera.supercars { border-left-color: #00e5ff; }
+.tarjeta-carrera.supergt { border-left-color: #ec4899; }
+.tarjeta-carrera.tc { border-left-color: #0284c7; }
+.tarjeta-carrera.tc2000 { border-left-color: #10b981; }
+.tarjeta-carrera.tn { border-left-color: #84cc16; }
+
+/* Colores de Tags */
+.tag-f1 { color: #ef4444; }
+.tag-f2 { color: #60a5fa; }
+.tag-f3 { color: #fb923c; }
+.tag-motogp { color: #f87171; }
+.tag-wec { color: #38bdf8; }
+.tag-indy { color: #c084fc; }
+.tag-fe { color: #22d3ee; }
+.tag-wrc { color: #fbbf24; }
+.tag-nascar { color: #facc15; }
+.tag-dtm { color: #94a3b8; }
+.tag-supercars { color: #67e8f9; }
+.tag-supergt { color: #f472b6; }
+.tag-tc { color: #38bdf8; }
+.tag-tc2000 { color: #34d399; }
+.tag-tn { color: #a3e635; }
+
+/* ==========================================================================
+   CRONOGRAMA DE SESIONES POR DÍA (DENTRO DE LA CATEGORÍA)
+   ========================================================================== */
+.cronograma-sesiones {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 5px;
+}
+
+.dia-sesion {
+    background-color: #111827;
+    border-radius: 8px;
+    padding: 12px 15px;
+    border: 1px solid #1f2937;
+}
+
+.dia-titulo {
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: #38bdf8;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #1f2937;
+}
+
+.sesion-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+    font-size: 0.9rem;
+}
+
+.sesion-row.destacado {
+    background-color: rgba(56, 189, 248, 0.05);
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 4px;
+}
+
+.sesion-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nombre-sesion {
+    font-weight: 600;
+    color: #e2e8f0;
+}
+
+.badge-divisional {
+    background-color: #374151;
+    color: #f3f4f6;
+    font-size: 0.7rem;
+    font-weight: 800;
+    padding: 2px 6px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.hora-sesion {
+    font-size: 0.85rem;
+}
+
+.orig-time {
+    color: #64748b;
+}
+
+.user-time {
+    color: #38bdf8;
+    font-weight: 700;
+}
+
+/* ==========================================================================
+   FOOTER / BANNER EN CONSTRUCCIÓN
+   ========================================================================== */
+.footer-construccion {
+    margin-top: 60px;
+    padding: 20px;
+    background-color: #111827;
+    border: 1px dashed #ef4444;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.footer-contenido {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.badge-aviso {
+    background-color: rgba(239, 68, 68, 0.15);
+    color: #ef4444;
+    font-size: 0.75rem;
+    font-weight: 800;
+    padding: 4px 12px;
+    border-radius: 6px;
+    letter-spacing: 0.5px;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.footer-contenido p {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    line-height: 1.4;
+}
+
+/* ==========================================================================
+   ADAPTACIÓN PARA PANTALLAS MÓVILES
+   ========================================================================== */
+@media (max-width: 640px) {
+    body {
+        padding: 15px 10px;
+    }
+
+    .logo {
+        font-size: 2.1rem;
+    }
+
+    .banner-pruebas-pill {
+        flex-direction: column;
+        border-radius: 12px;
+        padding: 8px 12px;
+        gap: 6px;
+    }
+
+    .bloque-finde {
+        padding: 15px;
+    }
+
+    .header-finde {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .sesion-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+}
