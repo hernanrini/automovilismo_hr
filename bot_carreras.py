@@ -1,5 +1,6 @@
 import json
 import traceback
+import subprocess
 from datetime import datetime, timedelta
 from collections import defaultdict
 
@@ -101,3 +102,21 @@ with open("carreras.json", "w", encoding="utf-8") as f:
     json.dump(datos_agenda, f, ensure_ascii=False, indent=2)
 
 print("✅ `carreras.json` actualizado con éxito para todas las categorías.")
+
+# --- BLOQUE PARA SUBIR AUTOMÁTICAMENTE EL CAMBIO A GITHUB ---
+try:
+    print("🚀 Subiendo cambios a GitHub...")
+    subprocess.run(["git", "config", "--global", "user.name", "Rino Dev Bot"], check=True)
+    subprocess.run(["git", "config", "--global", "user.email", "bot@automovilismohr.com"], check=True)
+    
+    # Añadimos el archivo generado
+    subprocess.run(["git", "add", "carreras.json"], check=True)
+    
+    # Hacemos el commit LIMPIO (sin [skip ci]) para que Vercel detecte el cambio y despliegue
+    subprocess.run(["git", "commit", "-m", "Agenda semanal actualizada automáticamente"], check=True)
+    
+    # Hacemos push a la rama principal (main)
+    subprocess.run(["git", "push"], check=True)
+    print("🎉 ¡Cambios subidos a GitHub con éxito! Vercel desplegará automáticamente.")
+except Exception as e:
+    print(f"⚠️ No se pudo hacer el commit automático: {e}")
