@@ -78,12 +78,78 @@ body {
     letter-spacing: 1px;
 }
 
-/* Estilo legacy de alerta si se usa fuera del header */
-.banner-pruebas {
+/* ==========================================================================
+   ESTILOS DE LA BARRA DE FILTROS (OPCIÓN B: PÍLDORAS)
+   ========================================================================== */
+.filtros-container {
+    margin-top: 1.5rem;
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    width: 100%;
 }
+
+.filtros-scroll {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 4px 10px 10px 10px;
+    max-width: 100%;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(239, 68, 68, 0.4) transparent;
+}
+
+.filtros-scroll::-webkit-scrollbar {
+    height: 6px;
+}
+
+.filtros-scroll::-webkit-scrollbar-thumb {
+    background: rgba(239, 68, 68, 0.4);
+    border-radius: 10px;
+}
+
+.pill-filtro {
+    background-color: #111827;
+    border: 1px solid #1f2937;
+    color: #94a3b8;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.pill-filtro:hover {
+    border-color: #4b5563;
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+/* Botón ACTIVO por defecto o seleccionado */
+.pill-filtro.activo {
+    background-color: #ef4444;
+    border-color: #ef4444;
+    color: #ffffff;
+    box-shadow: 0 0 12px rgba(239, 68, 68, 0.4);
+}
+
+/* Colores personalizados para las píldoras de filtro */
+.pill-filtro.f1.activo { background-color: #ef4444; border-color: #ef4444; box-shadow: 0 0 12px rgba(239, 68, 68, 0.4); }
+.pill-filtro.indy.activo { background-color: #8b5cf6; border-color: #8b5cf6; box-shadow: 0 0 12px rgba(139, 92, 246, 0.4); }
+.pill-filtro.wrc.activo { background-color: #f59e0b; border-color: #f59e0b; box-shadow: 0 0 12px rgba(245, 158, 11, 0.4); }
+.pill-filtro.nascar.activo { background-color: #eab308; border-color: #eab308; box-shadow: 0 0 12px rgba(234, 179, 8, 0.4); color: #000; }
+.pill-filtro.wec.activo { background-color: #0284c7; border-color: #0284c7; box-shadow: 0 0 12px rgba(2, 132, 199, 0.4); }
+.pill-filtro.tc.activo { background-color: #0284c7; border-color: #0284c7; box-shadow: 0 0 12px rgba(2, 132, 199, 0.4); }
+.pill-filtro.tc2000.activo { background-color: #10b981; border-color: #10b981; box-shadow: 0 0 12px rgba(16, 185, 129, 0.4); color: #000; }
+.pill-filtro.motogp.activo { background-color: #dc2626; border-color: #dc2626; box-shadow: 0 0 12px rgba(220, 38, 38, 0.4); }
+.pill-filtro.fe.activo { background-color: #06b6d4; border-color: #06b6d4; box-shadow: 0 0 12px rgba(6, 182, 212, 0.4); color: #000; }
+.pill-filtro.dtm.activo { background-color: #64748b; border-color: #64748b; box-shadow: 0 0 12px rgba(100, 116, 139, 0.4); }
+.pill-filtro.supercars.activo { background-color: #00e5ff; border-color: #00e5ff; box-shadow: 0 0 12px rgba(0, 229, 255, 0.4); color: #000; }
+.pill-filtro.supergt.activo { background-color: #ec4899; border-color: #ec4899; box-shadow: 0 0 12px rgba(236, 72, 153, 0.4); }
+.pill-filtro.tn.activo { background-color: #84cc16; border-color: #84cc16; box-shadow: 0 0 12px rgba(132, 204, 22, 0.4); color: #000; }
+.pill-filtro.stockcar.activo { background-color: #e11d48; border-color: #e11d48; box-shadow: 0 0 12px rgba(225, 29, 72, 0.4); }
 
 /* ==========================================================================
    CONTENEDOR PRINCIPAL Y BLOQUES DE FIN DE SEMANA
@@ -155,6 +221,12 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Clase auxiliar para ocultar tarjetas al filtrar */
+.tarjeta-carrera.oculta {
+    display: none !important;
 }
 
 .card-header {
@@ -177,12 +249,6 @@ body {
     letter-spacing: 1px;
 }
 
-.logo-categoria {
-    max-height: 24px;
-    max-width: 80px;
-    object-fit: contain;
-}
-
 .tarjeta-carrera h3 {
     font-size: 1.25rem;
     font-weight: 800;
@@ -195,7 +261,7 @@ body {
 }
 
 /* ==========================================================================
-   PERSONALIZACIÓN POR CATEGORÍA (15 CATEGORÍAS)
+   PERSONALIZACIÓN POR CATEGORÍA
    ========================================================================== */
 
 /* Bordes Laterales */
@@ -214,6 +280,7 @@ body {
 .tarjeta-carrera.tc { border-left-color: #0284c7; }
 .tarjeta-carrera.tc2000 { border-left-color: #10b981; }
 .tarjeta-carrera.tn { border-left-color: #84cc16; }
+.tarjeta-carrera.stockcar { border-left-color: #e11d48; }
 
 /* Colores de Tags */
 .tag-f1 { color: #ef4444; }
@@ -231,9 +298,10 @@ body {
 .tag-tc { color: #38bdf8; }
 .tag-tc2000 { color: #34d399; }
 .tag-tn { color: #a3e635; }
+.tag-stockcar { color: #fb7185; }
 
 /* ==========================================================================
-   CRONOGRAMA DE SESIONES POR DÍA (DENTRO DE LA CATEGORÍA)
+   CRONOGRAMA DE SESIONES POR DÍA
    ========================================================================== */
 .cronograma-sesiones {
     display: flex;

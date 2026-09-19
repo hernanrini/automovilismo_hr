@@ -1,34 +1,88 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
+
 <html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Automovilismo_HR</title>
+
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
+
 <header class="header">
+
     <div class="logo-container">
+
         <h1 class="logo">Automovilismo<span>_HR</span></h1>
+
     </div>
+
     <p class="subtitulo">AGENDA SEMANAL DE ACTIVIDAD MOTOR MUNDIAL</p>
-    
+
+   
+
     <!-- Banner de pruebas rediseñado como Pill -->
+
     <div class="banner-pruebas-pill">
+
         <span class="badge-pill">BETA</span>
+
         <span>Sitio en desarrollo activo. Horarios mostrados en fase de prueba.</span>
+
     </div>
+
+
+    <!-- Barra de Filtros por Categoría (Opción B: Píldoras reales) -->
+
+    <div class="filtros-container">
+
+        <div class="filtros-scroll">
+
+            <button class="pill-filtro activo" data-categoria="todas">TODAS</button>
+
+            <button class="pill-filtro f1" data-categoria="f1">F1</button>
+
+            <button class="pill-filtro indy" data-categoria="indy">INDYCAR</button>
+
+            <button class="pill-filtro wrc" data-categoria="wrc">WRC</button>
+
+            <button class="pill-filtro nascar" data-categoria="nascar">NASCAR</button>
+
+            <button class="pill-filtro wec" data-categoria="wec">WEC</button>
+
+            <button class="pill-filtro tc" data-categoria="tc">TURISMO CARRETERA</button>
+
+        </div>
+
+    </div>
+
 </header>
 
+
     <main id="contenedor-principal" class="contenedor-principal">
+
         <!-- Las tarjetas se cargan dinámicamente desde app.js -->
+
     </main>
 
+
     <footer class="footer-construccion">
+
         <p>© Automovilismo_HR - Desarrollado por Rino Dev</p>
+
     </footer>
 
+
     <script src="app.js"></script>
+
 </body>
-</html>
+
+</html> 
