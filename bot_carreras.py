@@ -119,4 +119,8 @@ try:
     subprocess.run(["git", "push"], check=True)
     print("🎉 ¡Cambios subidos a GitHub con éxito! Vercel desplegará automáticamente.")
 except Exception as e:
+<<<<<<< HEAD
     print(f"⚠️ No se pudo hacer el commit automático: {e}")
+=======
+    print(f"⚠️ No se pudo hacer el commit automático: {e}")
+>>>>>>> 2334b0c84b86d70b2e4e28e33350340107de943c
