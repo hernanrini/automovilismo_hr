@@ -28,7 +28,7 @@ async function cargarAgenda() {
     } catch (error) {
         console.error("Error al cargar la agenda:", error);
         if (contenedor) {
-            contenedor.innerHTML = `<p class="sin-resultados">Error al cargar `carreras.json`. Comprueba la consola.</p>`;
+            contenedor.innerHTML = `<p class="sin-resultados">Error al cargar 'carreras.json'. Comprueba la consola.</p>`;
         }
     }
 }

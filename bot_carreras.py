@@ -1,7 +1,7 @@
 import json
 import traceback
 import subprocess
-from datetime import datetime, timedelta
+from datetime import datetime
 from collections import defaultdict
 
 from scrapers.f1_scraper import obtener_proximas_f1
@@ -12,7 +12,7 @@ from scrapers.tc_scraper import obtener_proximas_tc
 from scrapers.wec_scraper import obtener_proximas_wec
 from scrapers.motogp_scraper import obtener_proximas_motogp
 
-print("🤖 Compilando calendario dinámico completo (todo el año)...")
+print("🤖 Compilando calendario dinámico...")
 
 eventos_totales = []
 scrapers = [
@@ -35,6 +35,8 @@ for scraper in scrapers:
     except Exception as e:
         print(f"⚠️ Error en scraper {scraper.__name__}: {e}")
         traceback.print_exc()
+
+print(f"📊 Total de eventos brutos obtenidos: {len(eventos_totales)}")
 
 calendario_agrupado = defaultdict(list)
 
@@ -72,31 +74,61 @@ for idx, clave in enumerate(claves_ordenadas, start=1):
     fecha_principal = max(fechas_grupo)
     titulo_semana = f"Fin de semana {fecha_principal.strftime('%d/%m')}"
 
-    if idx == 1:
-        estado_semana = "FIN DE SEMANA ACTUAL"
-    elif idx == 2:
-        estado_semana = "PRÓXIMO FIN DE SEMANA"
-    else:
-        estado_semana = "FUTURO"
-
     eventos_en_esta_semana = [item["evento_obj"] for item in items]
 
     datos_agenda.append({
         "semana": idx,
         "tituloSemana": titulo_semana,
-        "estado": estado_semana,
+        "estado": "FUTURO",
         "eventos": eventos_en_esta_semana
     })
 
+# --- FILTRAR SEMANAS PASADAS DE FORMA SEGURA ---
+hoy_str = datetime.now().strftime("%Y-%m-%d")
+print(f"📅 Fecha actual de referencia: {hoy_str}")
+
+datos_agenda_filtrados = []
+for semana in datos_agenda:
+    semana_vigente = False
+    for evento in semana["eventos"]:
+        for sesion in evento.get("sesiones", []):
+            fecha_sesion = sesion.get("fechaUtc", "").split("T")[0]
+            if fecha_sesion >= hoy_str:
+                semana_vigente = True
+                break
+        if semana_vigente:
+            break
+            
+    if semana_vigente:
+        datos_agenda_filtrados.append(semana)
+
+print(f"📦 Semanas después del filtro: {len(datos_agenda_filtrados)} de {len(datos_agenda)}")
+
+# Si por lo que sea el filtro deja todo a 0, recuperamos la agenda completa para que la web no se quede vacía
+if len(datos_agenda_filtrados) == 0:
+    print("⚠️ El filtro dejó la agenda vacía. Usando la agenda completa sin filtrar como seguridad.")
+    datos_agenda_filtrados = datos_agenda
+
+# Reasignar índices y estados
+for idx, semana_data in enumerate(datos_agenda_filtrados, start=1):
+    semana_data["semana"] = idx
+    if idx == 1:
+        semana_data["estado"] = "FIN DE SEMANA ACTUAL"
+    elif idx == 2:
+        semana_data["estado"] = "PRÓXIMO FIN DE SEMANA"
+    else:
+        semana_data["estado"] = "FUTURO"
+
 with open("carreras.json", "w", encoding="utf-8") as f:
-    json.dump(datos_agenda, f, ensure_ascii=False, indent=2)
+    json.dump(datos_agenda_filtrados, f, ensure_ascii=False, indent=2)
 
-print("✅ `carreras.json` actualizado.")
+print("✅ `carreras.json` guardado correctamente.")
 
+# --- GIT SEGURO ---
 try:
     subprocess.run(["git", "add", "."], check=True)
-    subprocess.run(["git", "commit", "-m", "Restauracion de calendario base"], check=True)
+    subprocess.run(["git", "commit", "-m", "Actualizar calendario de carreras"], check=True)
     subprocess.run(["git", "push"], check=True)
-    print("🎉 Sincronizado con GitHub.")
+    print("🎉 Sincronizado con GitHub con éxito.")
 except Exception as e:
-    print(f"⚠️ Git omitido: {e}")
+    print(f"⚠️ Git omitido o sin cambios pendientes: {e}")
