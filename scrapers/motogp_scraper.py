@@ -24,7 +24,7 @@ def obtener_proximas_motogp():
         if not season_id:
             return eventos_motogp
 
-        # 2. Obtenemos los eventos (GG.PP.) de esa temporada sin filtrar fechas
+        # 2. Obtenemos los eventos (GG.PP.) de esa temporada
         url_events = f"https://api.motogp.pulselive.com/motogp/v1/results/events?seasonUuid={season_id}"
         res_events = requests.get(url_events, headers=headers, timeout=10)
         res_events.raise_for_status()
@@ -33,10 +33,10 @@ def obtener_proximas_motogp():
 
         for ev in events:
             evento_formateado = _formatear_evento_motogp(ev, headers)
-            if evento_formateado:
+            if evento_formateado and evento_formateado.get("sesiones"):
                 eventos_motogp.append(evento_formateado)
 
-        print(f"MotoGP API: {len(eventos_motogp)} eventos procesados correctamente.")
+        print(f"MotoGP API: {len(eventos_motogp)} eventos procesados correctamente con sesiones.")
         return eventos_motogp
     except Exception as e:
         print(f"⚠️ Error scraping MotoGP: {e}")
@@ -61,22 +61,32 @@ def _formatear_evento_motogp(ev, headers):
             if res_ses.status_code == 200:
                 sessions_data = res_ses.json()
                 for ses in sessions_data:
-                    ses_name = ses.get("type", "Sesión")
+                    # Buscamos el tipo o nombre en varias claves posibles de la API
+                    ses_type = ses.get("type") or ""
+                    ses_title = ses.get("name") or ses.get("sessionTitle") or ses_type
+                    ses_name_upper = f"{ses_type} {ses_title}".upper()
+                    
                     date_str = ses.get("date") or ses.get("dateStart")
                     
                     if date_str:
                         dt = datetime.fromisoformat(date_str.replace("Z", "+00:00"))
                         utc_str = dt.strftime("%Y-%m-%dT%H:%M:%SZ")
                         
-                        es_carrera = "RACE" in ses_name.upper() or "GP" in ses_name.upper()
-                        es_sprint = "SPRINT" in ses_name.upper()
+                        es_carrera = "RACE" in ses_name_upper or "GP" in ses_name_upper or "RAC" in ses_name_upper
+                        es_sprint = "SPRINT" in ses_name_upper
                         destacado = es_carrera or es_sprint
                         
-                        nombre_limpio = f"MotoGP - {ses_name.replace('_', ' ').title()}"
-                        if es_carrera and "SPRINT" not in ses_name.upper():
+                        # Limpieza del nombre de la sesión para que luzca bien en la web
+                        if es_carrera and "SPRINT" not in ses_name_upper:
                             nombre_limpio = "MotoGP - Carrera Principal"
                         elif es_sprint:
                             nombre_limpio = "MotoGP - Carrera Sprint"
+                        elif "P" in ses_type.upper() or "PRACTICE" in ses_name_upper:
+                            nombre_limpio = f"MotoGP - Prácticas {ses_type}"
+                        elif "Q" in ses_type.upper() or "QUALIFYING" in ses_name_upper:
+                            nombre_limpio = f"MotoGP - Clasificación {ses_type}"
+                        else:
+                            nombre_limpio = f"MotoGP - {ses_title.title()}"
 
                         sesiones.append({
                             "dia": _nombre_dia(dt),
