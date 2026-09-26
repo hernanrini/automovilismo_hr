@@ -10,6 +10,7 @@ from scrapers.wrc_scraper import obtener_proximas_wrc
 from scrapers.nascar_scraper import obtener_proximas_nascar
 from scrapers.tc_scraper import obtener_proximas_tc
 from scrapers.wec_scraper import obtener_proximas_wec
+from scrapers.motogp_scraper import obtener_proximas_motogp
 
 print("🤖 Compilando calendario dinámico completo (todo el año)...")
 
@@ -20,7 +21,9 @@ scrapers = [
     obtener_proximas_wrc,
     obtener_proximas_nascar,
     obtener_proximas_tc,
-    obtener_proximas_wec
+    obtener_proximas_wec,
+    obtener_proximas_motogp,
+# Y los añades a la lista global que agrupa las semanas y genera el carreras.json
 ]
 
 for scraper in scrapers:
