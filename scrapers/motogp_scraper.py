@@ -85,10 +85,10 @@ def _formatear_evento_motogp(ev):
                 "nombre": "MotoGP - Carrera Principal",
                 "fechaUtc": dt_carrera.strftime("%Y-%m-%dT%H:%M:%SZ"),
                 "horaOriginal": "12:00 UTC",
-                "destacado": true if 'true' else True # estándar
+                "destacado": True  # Corregido de 'true' a 'True'
             })
-        except Exception:
-            pass
+        except Exception as e:
+            print(f"⚠️ Error formateando sesiones MotoGP para {nombre_gp}: {e}")
 
     return {
         "categoria": "MOTOGP",

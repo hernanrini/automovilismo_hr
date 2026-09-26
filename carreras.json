@@ -255,6 +255,13 @@
             "fechaUtc": "2026-10-03T13:00:00Z",
             "horaOriginal": "13:00 UTC",
             "destacado": true
+          },
+          {
+            "dia": "DOMINGO 04/10",
+            "nombre": "MotoGP - Carrera Principal",
+            "fechaUtc": "2026-10-04T12:00:00Z",
+            "horaOriginal": "12:00 UTC",
+            "destacado": true
           }
         ]
       }
@@ -352,6 +359,13 @@
             "fechaUtc": "2026-10-10T13:00:00Z",
             "horaOriginal": "13:00 UTC",
             "destacado": true
+          },
+          {
+            "dia": "DOMINGO 11/10",
+            "nombre": "MotoGP - Carrera Principal",
+            "fechaUtc": "2026-10-11T12:00:00Z",
+            "horaOriginal": "12:00 UTC",
+            "destacado": true
           }
         ]
       }
@@ -418,6 +432,13 @@
             "nombre": "MotoGP - Carrera Sprint",
             "fechaUtc": "2026-10-24T13:00:00Z",
             "horaOriginal": "13:00 UTC",
+            "destacado": true
+          },
+          {
+            "dia": "DOMINGO 25/10",
+            "nombre": "MotoGP - Carrera Principal",
+            "fechaUtc": "2026-10-25T12:00:00Z",
+            "horaOriginal": "12:00 UTC",
             "destacado": true
           }
         ]
@@ -530,6 +551,13 @@
             "fechaUtc": "2026-10-31T13:00:00Z",
             "horaOriginal": "13:00 UTC",
             "destacado": true
+          },
+          {
+            "dia": "DOMINGO 01/11",
+            "nombre": "MotoGP - Carrera Principal",
+            "fechaUtc": "2026-11-01T12:00:00Z",
+            "horaOriginal": "12:00 UTC",
+            "destacado": true
           }
         ]
       }
@@ -626,6 +654,13 @@
             "nombre": "MotoGP - Carrera Sprint",
             "fechaUtc": "2026-11-07T13:00:00Z",
             "horaOriginal": "13:00 UTC",
+            "destacado": true
+          },
+          {
+            "dia": "DOMINGO 08/11",
+            "nombre": "MotoGP - Carrera Principal",
+            "fechaUtc": "2026-11-08T12:00:00Z",
+            "horaOriginal": "12:00 UTC",
             "destacado": true
           }
         ]
@@ -730,6 +765,13 @@
             "nombre": "MotoGP - Carrera Sprint",
             "fechaUtc": "2026-11-21T13:00:00Z",
             "horaOriginal": "13:00 UTC",
+            "destacado": true
+          },
+          {
+            "dia": "DOMINGO 22/11",
+            "nombre": "MotoGP - Carrera Principal",
+            "fechaUtc": "2026-11-22T12:00:00Z",
+            "horaOriginal": "12:00 UTC",
             "destacado": true
           }
         ]
@@ -841,6 +883,13 @@
             "nombre": "MotoGP - Carrera Sprint",
             "fechaUtc": "2026-11-28T13:00:00Z",
             "horaOriginal": "13:00 UTC",
+            "destacado": true
+          },
+          {
+            "dia": "DOMINGO 29/11",
+            "nombre": "MotoGP - Carrera Principal",
+            "fechaUtc": "2026-11-29T12:00:00Z",
+            "horaOriginal": "12:00 UTC",
             "destacado": true
           }
         ]
