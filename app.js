@@ -8,15 +8,28 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 async function cargarAgenda() {
+    const contenedor = document.getElementById("contenedor-principal");
     try {
         const respuesta = await fetch("carreras.json");
+        if (!respuesta.ok) {
+            throw new Error(`HTTP error! status: ${respuesta.status}`);
+        }
         agendaGlobal = await respuesta.json();
         
-        // Renderizar la agenda aplicando el filtro actual
+        if (!Array.isArray(agendaGlobal) || agendaGlobal.length === 0) {
+            if (contenedor) {
+                contenedor.innerHTML = `<p class="sin-resultados">El archivo carreras.json está vacío o no tiene el formato correcto.</p>`;
+            }
+            return;
+        }
+
         renderizarAgenda();
 
     } catch (error) {
-        console.error("Error al cargar la agenda de Automovilismo_HR:", error);
+        console.error("Error al cargar la agenda:", error);
+        if (contenedor) {
+            contenedor.innerHTML = `<p class="sin-resultados">Error al cargar `carreras.json`. Comprueba la consola.</p>`;
+        }
     }
 }
 
@@ -24,16 +37,13 @@ function configurarFiltrosEstaticos() {
     const contenedorFiltros = document.querySelector(".filtros-scroll");
     if (!contenedorFiltros) return;
 
-    // Escuchar clics en los botones de filtro ya existentes en el HTML
     contenedorFiltros.addEventListener("click", (e) => {
         const boton = e.target.closest(".pill-filtro");
         if (!boton) return;
 
-        // Cambiar clases activas visuales
         contenedorFiltros.querySelectorAll(".pill-filtro").forEach(b => b.classList.remove("activo", "active"));
         boton.classList.add("activo");
 
-        // Capturar categoría y re-renderizar
         filtroActual = boton.getAttribute("data-categoria").toLowerCase().trim();
         renderizarAgenda();
     });
@@ -47,7 +57,6 @@ function renderizarAgenda() {
 
     const esFiltroGeneral = (filtroActual === "todas" || filtroActual === "todos");
     
-    // Comportamiento estable: si es general, limitamos a las primeras 3 semanas. Si es categoría específica, mostramos todo.
     let semanasAMostrar = agendaGlobal;
     if (esFiltroGeneral) {
         semanasAMostrar = agendaGlobal.slice(0, 3);
@@ -57,10 +66,11 @@ function renderizarAgenda() {
         let HTMLTarjetasCategorias = "";
         let eventosVisiblesCount = 0;
 
+        if (!semana.eventos) return;
+
         semana.eventos.forEach(evento => {
             const claseEvento = (evento.categoriaClase || "").toLowerCase().trim();
 
-            // Si no es general y la categoría no coincide, saltamos este evento
             if (!esFiltroGeneral && claseEvento !== filtroActual) {
                 return;
             }
@@ -68,12 +78,14 @@ function renderizarAgenda() {
             eventosVisiblesCount++;
 
             const sesionesPorDia = {};
-            evento.sesiones.forEach(sesion => {
-                if (!sesionesPorDia[sesion.dia]) {
-                    sesionesPorDia[sesion.dia] = [];
-                }
-                sesionesPorDia[sesion.dia].push(sesion);
-            });
+            if (evento.sesiones) {
+                evento.sesiones.forEach(sesion => {
+                    if (!sesionesPorDia[sesion.dia]) {
+                        sesionesPorDia[sesion.dia] = [];
+                    }
+                    sesionesPorDia[sesion.dia].push(sesion);
+                });
+            }
 
             let HTMLBloquesDias = "";
 
@@ -133,7 +145,6 @@ function renderizarAgenda() {
             `;
         });
 
-        // Si estamos filtrando por categoría específica y esta semana no tiene eventos de esa categoría, la saltamos
         if (!esFiltroGeneral && eventosVisiblesCount === 0) {
             return;
         }
