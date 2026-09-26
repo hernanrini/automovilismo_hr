@@ -24,25 +24,17 @@ def obtener_proximas_motogp():
         if not season_id:
             return eventos_motogp
 
-        # 2. Obtenemos los eventos (GG.PP.) de esa temporada
+        # 2. Obtenemos los eventos (GG.PP.) de esa temporada sin filtrar fechas
         url_events = f"https://api.motogp.pulselive.com/motogp/v1/results/events?seasonUuid={season_id}"
         res_events = requests.get(url_events, headers=headers, timeout=10)
         res_events.raise_for_status()
         events = res_events.json()
         print(f"MotoGP API: Se encontraron {len(events)} eventos en total.")
 
-        hoy = datetime.now().strftime("%Y-%m-%d")
-
         for ev in events:
-            # Buscamos la fecha en varias claves posibles para evitar que falle
-            fecha_str = ev.get("dateStart") or ev.get("startDate") or ev.get("date") or ""
-            fecha_carrera = fecha_str[:10] if fecha_str else ""
-            
-            # Si no hay fecha o es de hoy en adelante
-            if not fecha_carrera or fecha_carrera >= hoy:
-                evento_formateado = _formatear_evento_motogp(ev, headers)
-                if evento_formateado:
-                    eventos_motogp.append(evento_formateado)
+            evento_formateado = _formatear_evento_motogp(ev, headers)
+            if evento_formateado:
+                eventos_motogp.append(evento_formateado)
 
         print(f"MotoGP API: {len(eventos_motogp)} eventos procesados correctamente.")
         return eventos_motogp

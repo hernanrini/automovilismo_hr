@@ -112,11 +112,11 @@ try:
     subprocess.run(["git", "config", "--global", "user.name", "Rino Dev Bot"], check=True)
     subprocess.run(["git", "config", "--global", "user.email", "bot@automovilismohr.com"], check=True)
     
-    # Añadimos el archivo generado
-    subprocess.run(["git", "add", "carreras.json"], check=True)
+    # Añadimos TODOS los archivos modificados (incluyendo scrapers y JSON)
+    subprocess.run(["git", "add", "."], check=True)
     
     # Hacemos el commit LIMPIO para que Vercel detecte el cambio y despliegue
-    subprocess.run(["git", "commit", "-m", "Calendario anual completo actualizado automáticamente"], check=True)
+    subprocess.run(["git", "commit", "-m", "Calendario anual completo y scrapers actualizados automáticamente"], check=True)
     
     # Hacemos push a la rama principal (main)
     subprocess.run(["git", "push"], check=True)
