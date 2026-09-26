@@ -1,44 +1,3 @@
-// Variable global para almacenar los datos de la agenda
-let agendaGlobal = [];
-let filtroActual = "todas"; // Por defecto mostramos todas
-
-document.addEventListener("DOMContentLoaded", () => {
-    cargarAgenda();
-    configurarFiltrosEstaticos();
-});
-
-async function cargarAgenda() {
-    try {
-        const respuesta = await fetch("carreras.json");
-        agendaGlobal = await respuesta.json();
-        
-        // Renderizar la agenda aplicando el filtro actual
-        renderizarAgenda();
-
-    } catch (error) {
-        console.error("Error al cargar la agenda de Automovilismo_HR:", error);
-    }
-}
-
-function configurarFiltrosEstaticos() {
-    const contenedorFiltros = document.querySelector(".filtros-scroll");
-    if (!contenedorFiltros) return;
-
-    // Escuchar clics en los botones de filtro ya existentes en el HTML
-    contenedorFiltros.addEventListener("click", (e) => {
-        const boton = e.target.closest(".pill-filtro");
-        if (!boton) return;
-
-        // Cambiar clases activas visuales
-        contenedorFiltros.querySelectorAll(".pill-filtro").forEach(b => b.classList.remove("activo", "active"));
-        boton.classList.add("activo");
-
-        // Capturar categoría y re-renderizar
-        filtroActual = boton.getAttribute("data-categoria").toLowerCase().trim();
-        renderizarAgenda();
-    });
-}
-
 function renderizarAgenda() {
     const contenedor = document.getElementById("contenedor-principal");
     if (!contenedor) return;
@@ -47,11 +6,23 @@ function renderizarAgenda() {
 
     const esFiltroGeneral = (filtroActual === "todas" || filtroActual === "todos");
     
-    // COMPORTAMIENTO BLINDADO:
-    // Si es general, limitamos estrictamente a las primeras 3 semanas. Si es categoría específica, mostramos todo el año.
-    let semanasAMostrar = agendaGlobal;
+    // Obtenemos la fecha actual en formato YYYY-MM-DD para comparar (hoy es 26/09/2026)
+    const hoyStr = new Date().toISOString().split('T')[0];
+
+    // 1. Filtrar primero todas las semanas para eliminar las que ya pasaron por completo
+    let semanasAMostrar = agendaGlobal.filter(semana => {
+        // Una semana es válida si al menos uno de sus eventos tiene alguna sesión hoy o en el futuro
+        return semana.eventos.some(evento => {
+            return evento.sesiones.some(sesion => {
+                const fechaSesion = (sesion.fechaUtc || "").split('T')[0];
+                return fechaSesion >= hoyStr;
+            });
+        });
+    });
+
+    // 2. Si es la vista general, limitamos opcionalmente a las 3 próximas semanas vigentes
     if (esFiltroGeneral) {
-        semanasAMostrar = agendaGlobal.slice(0, 3);
+        semanasAMostrar = semanasAMostrar.slice(0, 3);
     }
 
     semanasAMostrar.forEach(semana => {
