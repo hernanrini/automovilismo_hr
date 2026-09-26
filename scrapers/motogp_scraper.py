@@ -1,6 +1,5 @@
 import requests
 from datetime import datetime
-from zoneinfo import ZoneInfo
 
 def obtener_proximas_motogp():
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
@@ -30,19 +29,22 @@ def obtener_proximas_motogp():
         res_events = requests.get(url_events, headers=headers, timeout=10)
         res_events.raise_for_status()
         events = res_events.json()
+        print(f"MotoGP API: Se encontraron {len(events)} eventos en total.")
 
         hoy = datetime.now().strftime("%Y-%m-%d")
 
         for ev in events:
-            fecha_str = ev.get("date", "")
+            # Buscamos la fecha en varias claves posibles para evitar que falle
+            fecha_str = ev.get("dateStart") or ev.get("startDate") or ev.get("date") or ""
             fecha_carrera = fecha_str[:10] if fecha_str else ""
             
-            # Filtramos para traer las carreras desde hoy en adelante (temporada completa restante)
-            if fecha_carrera and fecha_carrera >= hoy:
+            # Si no hay fecha o es de hoy en adelante
+            if not fecha_carrera or fecha_carrera >= hoy:
                 evento_formateado = _formatear_evento_motogp(ev, headers)
                 if evento_formateado:
                     eventos_motogp.append(evento_formateado)
 
+        print(f"MotoGP API: {len(eventos_motogp)} eventos procesados correctamente.")
         return eventos_motogp
     except Exception as e:
         print(f"⚠️ Error scraping MotoGP: {e}")
@@ -62,25 +64,22 @@ def _formatear_evento_motogp(ev, headers):
 
     if event_uuid:
         try:
-            # Consultamos las sesiones específicas de este Gran Premio
             url_sessions = f"https://api.motogp.pulselive.com/motogp/v1/results/sessions?eventUuid={event_uuid}"
             res_ses = requests.get(url_sessions, headers=headers, timeout=10)
             if res_ses.status_code == 200:
                 sessions_data = res_ses.json()
                 for ses in sessions_data:
                     ses_name = ses.get("type", "Sesión")
-                    date_str = ses.get("date")
+                    date_str = ses.get("date") or ses.get("dateStart")
                     
                     if date_str:
                         dt = datetime.fromisoformat(date_str.replace("Z", "+00:00"))
                         utc_str = dt.strftime("%Y-%m-%dT%H:%M:%SZ")
                         
-                        # Detectar si es sesión destacada (Carrera Principal o Sprint)
                         es_carrera = "RACE" in ses_name.upper() or "GP" in ses_name.upper()
                         es_sprint = "SPRINT" in ses_name.upper()
                         destacado = es_carrera or es_sprint
                         
-                        # Limpiar nombre para mostrar de forma limpia
                         nombre_limpio = f"MotoGP - {ses_name.replace('_', ' ').title()}"
                         if es_carrera and "SPRINT" not in ses_name.upper():
                             nombre_limpio = "MotoGP - Carrera Principal"
