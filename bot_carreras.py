@@ -23,7 +23,6 @@ scrapers = [
     obtener_proximas_tc,
     obtener_proximas_wec,
     obtener_proximas_motogp,
-# Y los añades a la lista global que agrupa las semanas y genera el carreras.json
 ]
 
 for scraper in scrapers:
@@ -70,11 +69,11 @@ for evento in eventos_totales:
         print(f"⚠️ Error procesando evento {evento.get('nombre', '???')}: {e}")
         traceback.print_exc()
 
-# Ordenar TODAS las semanas cronológicamente sin recortar
+# Ordenar TODAS las semanas cronológicamente
 claves_ordenadas = sorted(calendario_agrupado.keys())
 
 datos_agenda = []
-for idx, clave in enumerate(claves_ordenadas, start=1):
+for idx_orig, clave in enumerate(claves_ordenadas, start=1):
     items = calendario_agrupado[clave]
 
     # Buscamos la fecha máxima de ese grupo para sacar el domingo de carreras
@@ -84,27 +83,50 @@ for idx, clave in enumerate(claves_ordenadas, start=1):
     # Formato solicitado: "Fin de semana DD/MM"
     titulo_semana = f"Fin de semana {fecha_principal.strftime('%d/%m')}"
 
-    # Asignar estado dinámico según la posición de la tarjeta
-    if idx == 1:
-        estado_semana = "FIN DE SEMANA ACTUAL"
-    elif idx == 2:
-        estado_semana = "PRÓXIMO FIN DE SEMANA"
-    else:
-        estado_semana = "FUTURO"
-
     eventos_en_esta_semana = [item["evento_obj"] for item in items]
 
     datos_agenda.append({
-        "semana": idx,
+        "semana": idx_orig,
         "tituloSemana": titulo_semana,
-        "estado": estado_semana,
-        "eventos": eventos_en_esta_semana
+        "estado": "FUTURO",
+        "eventos": eventos_en_esta_semana,
+        "fecha_maxima": fecha_principal # Campo auxiliar para filtrar
     })
 
-with open("carreras.json", "w", encoding="utf-8") as f:
-    json.dump(datos_agenda, f, ensure_ascii=False, indent=2)
+# --- FILTRAR PARA DESCARTAR SEMANAS PASADAS ---
+hoy_str = datetime.now().strftime("%Y-%m-%d")
+datos_agenda_filtrados = []
 
-print("✅ `carreras.json` actualizado con éxito con todo el calendario anual.")
+for semana in datos_agenda:
+    # Comprobamos si el fin de semana es hoy o futuro
+    semana_vigente = False
+    for evento in semana["eventos"]:
+        for sesion in evento.get("sesiones", []):
+            if sesion.get("fechaUtc", "").split("T")[0] >= hoy_str:
+                semana_vigente = True
+                break
+        if semana_vigente:
+            break
+            
+    if semana_vigente:
+        # Eliminamos la clave auxiliar antes de guardar
+        semana.pop("fecha_maxima", None)
+        datos_agenda_filtrados.append(semana)
+
+# Reasignar índices y estados para que la primera semana visible sea la actual
+for idx, semana_data in enumerate(datos_agenda_filtrados, start=1):
+    semana_data["semana"] = idx
+    if idx == 1:
+        semana_data["estado"] = "FIN DE SEMANA ACTUAL"
+    elif idx == 2:
+        semana_data["estado"] = "PRÓXIMO FIN DE SEMANA"
+    else:
+        semana_data["estado"] = "FUTURO"
+
+with open("carreras.json", "w", encoding="utf-8") as f:
+    json.dump(datos_agenda_filtrados, f, ensure_ascii=False, indent=2)
+
+print("✅ `carreras.json` actualizado con éxito (se semanas pasadas filtradas).")
 
 # --- BLOQUE PARA SUBIR AUTOMÁTICAMENTE EL CAMBIO A GITHUB ---
 try:
@@ -112,11 +134,11 @@ try:
     subprocess.run(["git", "config", "--global", "user.name", "Rino Dev Bot"], check=True)
     subprocess.run(["git", "config", "--global", "user.email", "bot@automovilismohr.com"], check=True)
     
-    # Añadimos TODOS los archivos modificados (incluyendo scrapers y JSON)
+    # Añadimos TODOS los archivos modificados
     subprocess.run(["git", "add", "."], check=True)
     
-    # Hacemos el commit LIMPIO para que Vercel detecte el cambio y despliegue
-    subprocess.run(["git", "commit", "-m", "Calendario anual completo y scrapers actualizados automáticamente"], check=True)
+    # Hacemos el commit
+    subprocess.run(["git", "commit", "-m", "Calendario limpio y actualizado automáticamente"], check=True)
     
     # Hacemos push a la rama principal (main)
     subprocess.run(["git", "push"], check=True)

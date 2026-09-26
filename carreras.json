@@ -1,353 +1,8 @@
 [
   {
     "semana": 1,
-    "tituloSemana": "Fin de semana 28/02",
-    "estado": "FIN DE SEMANA ACTUAL",
-    "eventos": [
-      {
-        "categoria": "MOTOGP",
-        "categoriaClase": "motogp",
-        "evento": "PT Grand Prix of Thailand",
-        "circuito": "Chang International Circuit",
-        "logoUrl": "",
-        "sesiones": [
-          {
-            "dia": "SÁBADO 28/02",
-            "nombre": "MotoGP - Carrera Sprint",
-            "fechaUtc": "2026-02-28T13:00:00Z",
-            "horaOriginal": "13:00 UTC",
-            "destacado": true
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "semana": 2,
-    "tituloSemana": "Fin de semana 21/03",
-    "estado": "PRÓXIMO FIN DE SEMANA",
-    "eventos": [
-      {
-        "categoria": "MOTOGP",
-        "categoriaClase": "motogp",
-        "evento": "Estrella Galicia 0,0 Grand Prix of Brazil",
-        "circuito": "Autódromo Internacional de Goiânia - Ayrton Senna",
-        "logoUrl": "",
-        "sesiones": [
-          {
-            "dia": "SÁBADO 21/03",
-            "nombre": "MotoGP - Carrera Sprint",
-            "fechaUtc": "2026-03-21T13:00:00Z",
-            "horaOriginal": "13:00 UTC",
-            "destacado": true
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "semana": 3,
-    "tituloSemana": "Fin de semana 28/03",
-    "estado": "FUTURO",
-    "eventos": [
-      {
-        "categoria": "MOTOGP",
-        "categoriaClase": "motogp",
-        "evento": "Red Bull Grand Prix of The United States",
-        "circuito": "Circuit Of The Americas",
-        "logoUrl": "",
-        "sesiones": [
-          {
-            "dia": "SÁBADO 28/03",
-            "nombre": "MotoGP - Carrera Sprint",
-            "fechaUtc": "2026-03-28T13:00:00Z",
-            "horaOriginal": "13:00 UTC",
-            "destacado": true
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "semana": 4,
-    "tituloSemana": "Fin de semana 25/04",
-    "estado": "FUTURO",
-    "eventos": [
-      {
-        "categoria": "MOTOGP",
-        "categoriaClase": "motogp",
-        "evento": "Estrella Galicia 0,0 Grand Prix of Spain",
-        "circuito": "Circuito de Jerez - Ángel Nieto",
-        "logoUrl": "",
-        "sesiones": [
-          {
-            "dia": "SÁBADO 25/04",
-            "nombre": "MotoGP - Carrera Sprint",
-            "fechaUtc": "2026-04-25T13:00:00Z",
-            "horaOriginal": "13:00 UTC",
-            "destacado": true
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "semana": 5,
-    "tituloSemana": "Fin de semana 09/05",
-    "estado": "FUTURO",
-    "eventos": [
-      {
-        "categoria": "MOTOGP",
-        "categoriaClase": "motogp",
-        "evento": "Michelin Grand Prix of France",
-        "circuito": "Le Mans",
-        "logoUrl": "",
-        "sesiones": [
-          {
-            "dia": "SÁBADO 09/05",
-            "nombre": "MotoGP - Carrera Sprint",
-            "fechaUtc": "2026-05-09T13:00:00Z",
-            "horaOriginal": "13:00 UTC",
-            "destacado": true
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "semana": 6,
-    "tituloSemana": "Fin de semana 16/05",
-    "estado": "FUTURO",
-    "eventos": [
-      {
-        "categoria": "MOTOGP",
-        "categoriaClase": "motogp",
-        "evento": "Monster Energy Grand Prix of Catalonia",
-        "circuito": "Circuit de Barcelona-Catalunya",
-        "logoUrl": "",
-        "sesiones": [
-          {
-            "dia": "SÁBADO 16/05",
-            "nombre": "MotoGP - Carrera Sprint",
-            "fechaUtc": "2026-05-16T13:00:00Z",
-            "horaOriginal": "13:00 UTC",
-            "destacado": true
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "semana": 7,
-    "tituloSemana": "Fin de semana 30/05",
-    "estado": "FUTURO",
-    "eventos": [
-      {
-        "categoria": "MOTOGP",
-        "categoriaClase": "motogp",
-        "evento": "BREMBO GRAND PRIX OF ITALY ",
-        "circuito": "Autodromo Internazionale del Mugello",
-        "logoUrl": "",
-        "sesiones": [
-          {
-            "dia": "SÁBADO 30/05",
-            "nombre": "MotoGP - Carrera Sprint",
-            "fechaUtc": "2026-05-30T13:00:00Z",
-            "horaOriginal": "13:00 UTC",
-            "destacado": true
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "semana": 8,
-    "tituloSemana": "Fin de semana 06/06",
-    "estado": "FUTURO",
-    "eventos": [
-      {
-        "categoria": "MOTOGP",
-        "categoriaClase": "motogp",
-        "evento": "GRAND PRIX OF HUNGARY ",
-        "circuito": "Balaton Park Circuit",
-        "logoUrl": "",
-        "sesiones": [
-          {
-            "dia": "SÁBADO 06/06",
-            "nombre": "MotoGP - Carrera Sprint",
-            "fechaUtc": "2026-06-06T13:00:00Z",
-            "horaOriginal": "13:00 UTC",
-            "destacado": true
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "semana": 9,
-    "tituloSemana": "Fin de semana 20/06",
-    "estado": "FUTURO",
-    "eventos": [
-      {
-        "categoria": "MOTOGP",
-        "categoriaClase": "motogp",
-        "evento": "MONSTER ENERGY GRAND PRIX OF CZECHIA ",
-        "circuito": "CREDITAS Autodrom Brno",
-        "logoUrl": "",
-        "sesiones": [
-          {
-            "dia": "SÁBADO 20/06",
-            "nombre": "MotoGP - Carrera Sprint",
-            "fechaUtc": "2026-06-20T13:00:00Z",
-            "horaOriginal": "13:00 UTC",
-            "destacado": true
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "semana": 10,
-    "tituloSemana": "Fin de semana 27/06",
-    "estado": "FUTURO",
-    "eventos": [
-      {
-        "categoria": "MOTOGP",
-        "categoriaClase": "motogp",
-        "evento": "TISSOT GRAND PRIX OF THE NETHERLANDS ",
-        "circuito": "TT Circuit Assen",
-        "logoUrl": "",
-        "sesiones": [
-          {
-            "dia": "SÁBADO 27/06",
-            "nombre": "MotoGP - Carrera Sprint",
-            "fechaUtc": "2026-06-27T13:00:00Z",
-            "horaOriginal": "13:00 UTC",
-            "destacado": true
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "semana": 11,
-    "tituloSemana": "Fin de semana 11/07",
-    "estado": "FUTURO",
-    "eventos": [
-      {
-        "categoria": "MOTOGP",
-        "categoriaClase": "motogp",
-        "evento": "LIQUI MOLY GRAND PRIX OF GERMANY ",
-        "circuito": "Sachsenring",
-        "logoUrl": "",
-        "sesiones": [
-          {
-            "dia": "SÁBADO 11/07",
-            "nombre": "MotoGP - Carrera Sprint",
-            "fechaUtc": "2026-07-11T13:00:00Z",
-            "horaOriginal": "13:00 UTC",
-            "destacado": true
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "semana": 12,
-    "tituloSemana": "Fin de semana 08/08",
-    "estado": "FUTURO",
-    "eventos": [
-      {
-        "categoria": "MOTOGP",
-        "categoriaClase": "motogp",
-        "evento": "QATAR AIRWAYS GRAND PRIX OF GREAT BRITAIN ",
-        "circuito": "Silverstone Circuit",
-        "logoUrl": "",
-        "sesiones": [
-          {
-            "dia": "SÁBADO 08/08",
-            "nombre": "MotoGP - Carrera Sprint",
-            "fechaUtc": "2026-08-08T13:00:00Z",
-            "horaOriginal": "13:00 UTC",
-            "destacado": true
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "semana": 13,
-    "tituloSemana": "Fin de semana 29/08",
-    "estado": "FUTURO",
-    "eventos": [
-      {
-        "categoria": "MOTOGP",
-        "categoriaClase": "motogp",
-        "evento": "MICHELIN® GRAND PRIX OF ARAGON ",
-        "circuito": "MotorLand Aragón",
-        "logoUrl": "",
-        "sesiones": [
-          {
-            "dia": "SÁBADO 29/08",
-            "nombre": "MotoGP - Carrera Sprint",
-            "fechaUtc": "2026-08-29T13:00:00Z",
-            "horaOriginal": "13:00 UTC",
-            "destacado": true
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "semana": 14,
-    "tituloSemana": "Fin de semana 12/09",
-    "estado": "FUTURO",
-    "eventos": [
-      {
-        "categoria": "MOTOGP",
-        "categoriaClase": "motogp",
-        "evento": "RED BULL GRAND PRIX OF SAN MARINO AND THE RIMINI RIVIERA ",
-        "circuito": "Misano World Circuit Marco Simoncelli",
-        "logoUrl": "",
-        "sesiones": [
-          {
-            "dia": "SÁBADO 12/09",
-            "nombre": "MotoGP - Carrera Sprint",
-            "fechaUtc": "2026-09-12T13:00:00Z",
-            "horaOriginal": "13:00 UTC",
-            "destacado": true
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "semana": 15,
-    "tituloSemana": "Fin de semana 19/09",
-    "estado": "FUTURO",
-    "eventos": [
-      {
-        "categoria": "MOTOGP",
-        "categoriaClase": "motogp",
-        "evento": "QATAR AIRWAYS GRAND PRIX OF AUSTRIA ",
-        "circuito": "Red Bull Ring - Spielberg",
-        "logoUrl": "",
-        "sesiones": [
-          {
-            "dia": "SÁBADO 19/09",
-            "nombre": "MotoGP - Carrera Sprint",
-            "fechaUtc": "2026-09-19T13:00:00Z",
-            "horaOriginal": "13:00 UTC",
-            "destacado": true
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "semana": 16,
     "tituloSemana": "Fin de semana 27/09",
-    "estado": "FUTURO",
+    "estado": "FIN DE SEMANA ACTUAL",
     "eventos": [
       {
         "categoria": "FORMULA 1",
@@ -449,9 +104,9 @@
     ]
   },
   {
-    "semana": 17,
+    "semana": 2,
     "tituloSemana": "Fin de semana 04/10",
-    "estado": "FUTURO",
+    "estado": "PRÓXIMO FIN DE SEMANA",
     "eventos": [
       {
         "categoria": "FORMULA 1",
@@ -613,7 +268,7 @@
     ]
   },
   {
-    "semana": 18,
+    "semana": 3,
     "tituloSemana": "Fin de semana 11/10",
     "estado": "FUTURO",
     "eventos": [
@@ -710,7 +365,7 @@
     ]
   },
   {
-    "semana": 19,
+    "semana": 4,
     "tituloSemana": "Fin de semana 25/10",
     "estado": "FUTURO",
     "eventos": [
@@ -777,7 +432,7 @@
     ]
   },
   {
-    "semana": 20,
+    "semana": 5,
     "tituloSemana": "Fin de semana 01/11",
     "estado": "FUTURO",
     "eventos": [
@@ -888,7 +543,7 @@
     ]
   },
   {
-    "semana": 21,
+    "semana": 6,
     "tituloSemana": "Fin de semana 08/11",
     "estado": "FUTURO",
     "eventos": [
@@ -985,7 +640,7 @@
     ]
   },
   {
-    "semana": 22,
+    "semana": 7,
     "tituloSemana": "Fin de semana 14/11",
     "estado": "FUTURO",
     "eventos": [
@@ -1022,7 +677,7 @@
     ]
   },
   {
-    "semana": 23,
+    "semana": 8,
     "tituloSemana": "Fin de semana 22/11",
     "estado": "FUTURO",
     "eventos": [
@@ -1089,7 +744,7 @@
     ]
   },
   {
-    "semana": 24,
+    "semana": 9,
     "tituloSemana": "Fin de semana 29/11",
     "estado": "FUTURO",
     "eventos": [
@@ -1200,7 +855,7 @@
     ]
   },
   {
-    "semana": 25,
+    "semana": 10,
     "tituloSemana": "Fin de semana 06/12",
     "estado": "FUTURO",
     "eventos": [
