@@ -11,7 +11,7 @@ from scrapers.nascar_scraper import obtener_proximas_nascar
 from scrapers.tc_scraper import obtener_proximas_tc
 from scrapers.wec_scraper import obtener_proximas_wec
 
-print("🤖 Compilando calendario dinámico (formato Fin de semana DD/MM)...")
+print("🤖 Compilando calendario dinámico completo (todo el año)...")
 
 eventos_totales = []
 scrapers = [
@@ -67,8 +67,8 @@ for evento in eventos_totales:
         print(f"⚠️ Error procesando evento {evento.get('nombre', '???')}: {e}")
         traceback.print_exc()
 
-# Ordenar las semanas cronológicamente y recortar estrictamente a los 3 primeros fines de semana
-claves_ordenadas = sorted(calendario_agrupado.keys())[:3]
+# Ordenar TODAS las semanas cronológicamente sin recortar
+claves_ordenadas = sorted(calendario_agrupado.keys())
 
 datos_agenda = []
 for idx, clave in enumerate(claves_ordenadas, start=1):
@@ -101,7 +101,7 @@ for idx, clave in enumerate(claves_ordenadas, start=1):
 with open("carreras.json", "w", encoding="utf-8") as f:
     json.dump(datos_agenda, f, ensure_ascii=False, indent=2)
 
-print("✅ `carreras.json` actualizado con éxito para todas las categorías.")
+print("✅ `carreras.json` actualizado con éxito con todo el calendario anual.")
 
 # --- BLOQUE PARA SUBIR AUTOMÁTICAMENTE EL CAMBIO A GITHUB ---
 try:
@@ -112,15 +112,11 @@ try:
     # Añadimos el archivo generado
     subprocess.run(["git", "add", "carreras.json"], check=True)
     
-    # Hacemos el commit LIMPIO (sin [skip ci]) para que Vercel detecte el cambio y despliegue
-    subprocess.run(["git", "commit", "-m", "Agenda semanal actualizada automáticamente"], check=True)
+    # Hacemos el commit LIMPIO para que Vercel detecte el cambio y despliegue
+    subprocess.run(["git", "commit", "-m", "Calendario anual completo actualizado automáticamente"], check=True)
     
     # Hacemos push a la rama principal (main)
     subprocess.run(["git", "push"], check=True)
     print("🎉 ¡Cambios subidos a GitHub con éxito! Vercel desplegará automáticamente.")
 except Exception as e:
-<<<<<<< HEAD
     print(f"⚠️ No se pudo hacer el commit automático: {e}")
-=======
-    print(f"⚠️ No se pudo hacer el commit automático: {e}")
->>>>>>> 2334b0c84b86d70b2e4e28e33350340107de943c

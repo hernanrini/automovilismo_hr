@@ -46,7 +46,8 @@ def _nombre_dia(dt, hora_str=""):
     return f"{dias[dt.weekday()]} {dt.day:02d}/{dt.month:02d}"
 
 def obtener_proximas_f1():
-    url_f1 = "https://api.jolpi.ca/ergast/f1/current/next.json"
+    # Pedimos el calendario completo de la temporada actual
+    url_f1 = "https://api.jolpi.ca/ergast/f1/current.json"
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
     eventos_f1 = []
 
@@ -57,21 +58,17 @@ def obtener_proximas_f1():
         if not races:
             return eventos_f1
 
-        carrera1 = races[0]
-        ronda1_num = int(carrera1["round"])
-        eventos_f1.append(_formatear_evento_f1(carrera1))
+        # Fecha actual para filtrar y traer solo las carreras desde hoy en adelante
+        hoy = datetime.now().strftime("%Y-%m-%d")
 
-        # Segunda carrera futura
-        url_siguiente = f"https://api.jolpi.ca/ergast/f1/current/{ronda1_num + 1}.json"
-        res2 = requests.get(url_siguiente, headers=headers, timeout=10)
-        if res2.status_code == 200:
-            races2 = res2.json()["MRData"]["RaceTable"]["Races"]
-            if races2:
-                eventos_f1.append(_formatear_evento_f1(races2[0]))
+        for carrera in races:
+            fecha_carrera = carrera["date"]
+            if fecha_carrera >= hoy:
+                eventos_f1.append(_formatear_evento_f1(carrera))
 
         return eventos_f1
     except Exception as e:
-        print(f"⚠️ Error scraping F1: {e}")
+        print(f"⚠️ Error scraping F1 completo: {e}")
         return eventos_f1
 
 def _formatear_evento_f1(carrera):
@@ -79,15 +76,13 @@ def _formatear_evento_f1(carrera):
     sesiones = []
 
     # Mapeo directo: clave de Jolpica -> nombre a mostrar, destacado o no
-    # (incluye formato normal Y formato Sprint; Jolpica solo devuelve
-    # las claves que realmente aplican a ese fin de semana)
     sesiones_posibles = [
-        ("FirstPractice",     "F1 - Prácticas Libres 1",       False),
-        ("SecondPractice",    "F1 - Prácticas Libres 2",       False),
-        ("ThirdPractice",     "F1 - Prácticas Libres 3",       False),
-        ("SprintQualifying",  "F1 - Clasificación Sprint",     False),
-        ("Sprint",            "F1 - Carrera Sprint",           True),
-        ("Qualifying",        "F1 - Clasificación",            True),
+        ("FirstPractice",    "F1 - Prácticas Libres 1",     False),
+        ("SecondPractice",   "F1 - Prácticas Libres 2",     False),
+        ("ThirdPractice",    "F1 - Prácticas Libres 3",     False),
+        ("SprintQualifying", "F1 - Clasificación Sprint",    False),
+        ("Sprint",           "F1 - Carrera Sprint",          True),
+        ("Qualifying",       "F1 - Clasificación",           True),
     ]
 
     for clave, nombre, destacado in sesiones_posibles:

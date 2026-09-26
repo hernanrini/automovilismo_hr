@@ -45,19 +45,25 @@ function renderizarAgenda() {
     
     contenedor.innerHTML = "";
 
-    agendaGlobal.forEach(semana => {
-        const bloque = document.createElement("section");
-        bloque.className = `bloque-finde ${semana.semana === 1 ? 'actual' : ''}`;
+    const esFiltroGeneral = (filtroActual === "todas" || filtroActual === "todos");
+    
+    // COMPORTAMIENTO BLINDADO:
+    // Si es general, limitamos estrictamente a las primeras 3 semanas. Si es categoría específica, mostramos todo el año.
+    let semanasAMostrar = agendaGlobal;
+    if (esFiltroGeneral) {
+        semanasAMostrar = agendaGlobal.slice(0, 3);
+    }
 
+    semanasAMostrar.forEach(semana => {
         let HTMLTarjetasCategorias = "";
         let eventosVisiblesCount = 0;
 
         semana.eventos.forEach(evento => {
             const claseEvento = (evento.categoriaClase || "").toLowerCase().trim();
 
-            // Filtrar si no coincide con la categoría seleccionada (y el filtro no es 'todas' o 'todos')
-            if (filtroActual !== "todas" && filtroActual !== "todos" && claseEvento !== filtroActual) {
-                return; // Omitir este evento
+            // Si no es general y la categoría no coincide, saltamos este evento
+            if (!esFiltroGeneral && claseEvento !== filtroActual) {
+                return;
             }
 
             eventosVisiblesCount++;
@@ -128,10 +134,13 @@ function renderizarAgenda() {
             `;
         });
 
-        // Si hay un filtro aplicado y este fin de semana no tiene eventos, ocultamos el bloque de la semana
-        if (filtroActual !== "todas" && filtroActual !== "todos" && eventosVisiblesCount === 0) {
+        // Si estamos filtrando por categoría específica y esta semana no tiene eventos de esa categoría, la saltamos
+        if (!esFiltroGeneral && eventosVisiblesCount === 0) {
             return;
         }
+
+        const bloque = document.createElement("section");
+        bloque.className = `bloque-finde ${semana.semana === 1 ? 'actual' : ''}`;
 
         bloque.innerHTML = `
             <div class="header-finde">
