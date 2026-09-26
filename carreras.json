@@ -5,6 +5,50 @@
     "estado": "FIN DE SEMANA ACTUAL",
     "eventos": [
       {
+        "categoria": "FORMULA 1",
+        "categoriaClase": "f1",
+        "evento": "Azerbaijan Grand Prix",
+        "circuito": "Baku City Circuit",
+        "logoUrl": "",
+        "sesiones": [
+          {
+            "dia": "JUEVES 24/09",
+            "nombre": "F1 - Prácticas Libres 1",
+            "fechaUtc": "2026-09-24T08:30:00Z",
+            "horaOriginal": "12:30 Local (+04)",
+            "destacado": false
+          },
+          {
+            "dia": "JUEVES 24/09",
+            "nombre": "F1 - Prácticas Libres 2",
+            "fechaUtc": "2026-09-24T12:00:00Z",
+            "horaOriginal": "16:00 Local (+04)",
+            "destacado": false
+          },
+          {
+            "dia": "VIERNES 25/09",
+            "nombre": "F1 - Prácticas Libres 3",
+            "fechaUtc": "2026-09-25T08:30:00Z",
+            "horaOriginal": "12:30 Local (+04)",
+            "destacado": false
+          },
+          {
+            "dia": "VIERNES 25/09",
+            "nombre": "F1 - Clasificación",
+            "fechaUtc": "2026-09-25T12:00:00Z",
+            "horaOriginal": "16:00 Local (+04)",
+            "destacado": true
+          },
+          {
+            "dia": "SÁBADO 26/09",
+            "nombre": "F1 - Carrera Principal",
+            "fechaUtc": "2026-09-26T11:00:00Z",
+            "horaOriginal": "15:00 Local (+04)",
+            "destacado": true
+          }
+        ]
+      },
+      {
         "categoria": "NASCAR CUP SERIES",
         "categoriaClase": "nascar",
         "evento": "Hollywood Casino 400 ",
@@ -290,9 +334,104 @@
   },
   {
     "semana": 4,
+    "tituloSemana": "Fin de semana 25/10",
+    "estado": "FUTURO",
+    "eventos": [
+      {
+        "categoria": "FORMULA 1",
+        "categoriaClase": "f1",
+        "evento": "United States Grand Prix",
+        "circuito": "Circuit of the Americas",
+        "logoUrl": "",
+        "sesiones": [
+          {
+            "dia": "VIERNES 23/10",
+            "nombre": "F1 - Prácticas Libres 1",
+            "fechaUtc": "2026-10-23T17:30:00Z",
+            "horaOriginal": "12:30 Local (CDT)",
+            "destacado": false
+          },
+          {
+            "dia": "VIERNES 23/10",
+            "nombre": "F1 - Prácticas Libres 2",
+            "fechaUtc": "2026-10-23T21:00:00Z",
+            "horaOriginal": "16:00 Local (CDT)",
+            "destacado": false
+          },
+          {
+            "dia": "SÁBADO 24/10",
+            "nombre": "F1 - Prácticas Libres 3",
+            "fechaUtc": "2026-10-24T17:30:00Z",
+            "horaOriginal": "12:30 Local (CDT)",
+            "destacado": false
+          },
+          {
+            "dia": "SÁBADO 24/10",
+            "nombre": "F1 - Clasificación",
+            "fechaUtc": "2026-10-24T21:00:00Z",
+            "horaOriginal": "16:00 Local (CDT)",
+            "destacado": true
+          },
+          {
+            "dia": "DOMINGO 25/10",
+            "nombre": "F1 - Carrera Principal",
+            "fechaUtc": "2026-10-25T20:00:00Z",
+            "horaOriginal": "15:00 Local (CDT)",
+            "destacado": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "semana": 5,
     "tituloSemana": "Fin de semana 01/11",
     "estado": "FUTURO",
     "eventos": [
+      {
+        "categoria": "FORMULA 1",
+        "categoriaClase": "f1",
+        "evento": "Mexico City Grand Prix",
+        "circuito": "Autódromo Hermanos Rodríguez",
+        "logoUrl": "",
+        "sesiones": [
+          {
+            "dia": "VIERNES 30/10",
+            "nombre": "F1 - Prácticas Libres 1",
+            "fechaUtc": "2026-10-30T18:30:00Z",
+            "horaOriginal": "12:30 Local (CST)",
+            "destacado": false
+          },
+          {
+            "dia": "VIERNES 30/10",
+            "nombre": "F1 - Prácticas Libres 2",
+            "fechaUtc": "2026-10-30T22:00:00Z",
+            "horaOriginal": "16:00 Local (CST)",
+            "destacado": false
+          },
+          {
+            "dia": "SÁBADO 31/10",
+            "nombre": "F1 - Prácticas Libres 3",
+            "fechaUtc": "2026-10-31T17:30:00Z",
+            "horaOriginal": "11:30 Local (CST)",
+            "destacado": false
+          },
+          {
+            "dia": "SÁBADO 31/10",
+            "nombre": "F1 - Clasificación",
+            "fechaUtc": "2026-10-31T21:00:00Z",
+            "horaOriginal": "15:00 Local (CST)",
+            "destacado": true
+          },
+          {
+            "dia": "DOMINGO 01/11",
+            "nombre": "F1 - Carrera Principal",
+            "fechaUtc": "2026-11-01T20:00:00Z",
+            "horaOriginal": "14:00 Local (CST)",
+            "destacado": true
+          }
+        ]
+      },
       {
         "categoria": "Turismo Carretera & TC Pista",
         "categoriaClase": "tc",
@@ -340,10 +479,54 @@
     ]
   },
   {
-    "semana": 5,
-    "tituloSemana": "Fin de semana 07/11",
+    "semana": 6,
+    "tituloSemana": "Fin de semana 08/11",
     "estado": "FUTURO",
     "eventos": [
+      {
+        "categoria": "FORMULA 1",
+        "categoriaClase": "f1",
+        "evento": "Brazilian Grand Prix",
+        "circuito": "Autódromo José Carlos Pace",
+        "logoUrl": "",
+        "sesiones": [
+          {
+            "dia": "VIERNES 06/11",
+            "nombre": "F1 - Prácticas Libres 1",
+            "fechaUtc": "2026-11-06T15:30:00Z",
+            "horaOriginal": "12:30 Local (-03)",
+            "destacado": false
+          },
+          {
+            "dia": "VIERNES 06/11",
+            "nombre": "F1 - Prácticas Libres 2",
+            "fechaUtc": "2026-11-06T19:00:00Z",
+            "horaOriginal": "16:00 Local (-03)",
+            "destacado": false
+          },
+          {
+            "dia": "SÁBADO 07/11",
+            "nombre": "F1 - Prácticas Libres 3",
+            "fechaUtc": "2026-11-07T14:30:00Z",
+            "horaOriginal": "11:30 Local (-03)",
+            "destacado": false
+          },
+          {
+            "dia": "SÁBADO 07/11",
+            "nombre": "F1 - Clasificación",
+            "fechaUtc": "2026-11-07T18:00:00Z",
+            "horaOriginal": "15:00 Local (-03)",
+            "destacado": true
+          },
+          {
+            "dia": "DOMINGO 08/11",
+            "nombre": "F1 - Carrera Principal",
+            "fechaUtc": "2026-11-08T17:00:00Z",
+            "horaOriginal": "14:00 Local (-03)",
+            "destacado": true
+          }
+        ]
+      },
       {
         "categoria": "WEC",
         "categoriaClase": "wec",
@@ -377,7 +560,7 @@
     ]
   },
   {
-    "semana": 6,
+    "semana": 7,
     "tituloSemana": "Fin de semana 14/11",
     "estado": "FUTURO",
     "eventos": [
@@ -414,10 +597,105 @@
     ]
   },
   {
-    "semana": 7,
+    "semana": 8,
+    "tituloSemana": "Fin de semana 22/11",
+    "estado": "FUTURO",
+    "eventos": [
+      {
+        "categoria": "FORMULA 1",
+        "categoriaClase": "f1",
+        "evento": "Las Vegas Grand Prix",
+        "circuito": "Las Vegas Strip Street Circuit",
+        "logoUrl": "",
+        "sesiones": [
+          {
+            "dia": "VIERNES 20/11",
+            "nombre": "F1 - Prácticas Libres 1",
+            "fechaUtc": "2026-11-20T00:30:00Z",
+            "horaOriginal": "16:30 Local (PST)",
+            "destacado": false
+          },
+          {
+            "dia": "VIERNES 20/11",
+            "nombre": "F1 - Prácticas Libres 2",
+            "fechaUtc": "2026-11-20T04:00:00Z",
+            "horaOriginal": "20:00 Local (PST)",
+            "destacado": false
+          },
+          {
+            "dia": "SÁBADO 21/11",
+            "nombre": "F1 - Prácticas Libres 3",
+            "fechaUtc": "2026-11-21T00:30:00Z",
+            "horaOriginal": "16:30 Local (PST)",
+            "destacado": false
+          },
+          {
+            "dia": "SÁBADO 21/11",
+            "nombre": "F1 - Clasificación",
+            "fechaUtc": "2026-11-21T04:00:00Z",
+            "horaOriginal": "20:00 Local (PST)",
+            "destacado": true
+          },
+          {
+            "dia": "DOMINGO 22/11",
+            "nombre": "F1 - Carrera Principal",
+            "fechaUtc": "2026-11-22T04:00:00Z",
+            "horaOriginal": "20:00 Local (PST)",
+            "destacado": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "semana": 9,
     "tituloSemana": "Fin de semana 29/11",
     "estado": "FUTURO",
     "eventos": [
+      {
+        "categoria": "FORMULA 1",
+        "categoriaClase": "f1",
+        "evento": "Qatar Grand Prix",
+        "circuito": "Lusail International Circuit",
+        "logoUrl": "",
+        "sesiones": [
+          {
+            "dia": "VIERNES 27/11",
+            "nombre": "F1 - Prácticas Libres 1",
+            "fechaUtc": "2026-11-27T13:30:00Z",
+            "horaOriginal": "16:30 Local (+03)",
+            "destacado": false
+          },
+          {
+            "dia": "VIERNES 27/11",
+            "nombre": "F1 - Prácticas Libres 2",
+            "fechaUtc": "2026-11-27T17:00:00Z",
+            "horaOriginal": "20:00 Local (+03)",
+            "destacado": false
+          },
+          {
+            "dia": "SÁBADO 28/11",
+            "nombre": "F1 - Prácticas Libres 3",
+            "fechaUtc": "2026-11-28T14:30:00Z",
+            "horaOriginal": "17:30 Local (+03)",
+            "destacado": false
+          },
+          {
+            "dia": "SÁBADO 28/11",
+            "nombre": "F1 - Clasificación",
+            "fechaUtc": "2026-11-28T18:00:00Z",
+            "horaOriginal": "21:00 Local (+03)",
+            "destacado": true
+          },
+          {
+            "dia": "DOMINGO 29/11",
+            "nombre": "F1 - Carrera Principal",
+            "fechaUtc": "2026-11-29T16:00:00Z",
+            "horaOriginal": "19:00 Local (+03)",
+            "destacado": true
+          }
+        ]
+      },
       {
         "categoria": "Turismo Carretera & TC Pista",
         "categoriaClase": "tc",
@@ -458,6 +736,57 @@
             "nombre": "Turismo Carretera - Fecha 14 - Final",
             "fechaUtc": "2026-11-29T17:00:00Z",
             "horaOriginal": "17:00 UTC",
+            "destacado": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "semana": 10,
+    "tituloSemana": "Fin de semana 06/12",
+    "estado": "FUTURO",
+    "eventos": [
+      {
+        "categoria": "FORMULA 1",
+        "categoriaClase": "f1",
+        "evento": "Abu Dhabi Grand Prix",
+        "circuito": "Yas Marina Circuit",
+        "logoUrl": "",
+        "sesiones": [
+          {
+            "dia": "VIERNES 04/12",
+            "nombre": "F1 - Prácticas Libres 1",
+            "fechaUtc": "2026-12-04T09:30:00Z",
+            "horaOriginal": "13:30 Local (+04)",
+            "destacado": false
+          },
+          {
+            "dia": "VIERNES 04/12",
+            "nombre": "F1 - Prácticas Libres 2",
+            "fechaUtc": "2026-12-04T13:00:00Z",
+            "horaOriginal": "17:00 Local (+04)",
+            "destacado": false
+          },
+          {
+            "dia": "SÁBADO 05/12",
+            "nombre": "F1 - Prácticas Libres 3",
+            "fechaUtc": "2026-12-05T10:30:00Z",
+            "horaOriginal": "14:30 Local (+04)",
+            "destacado": false
+          },
+          {
+            "dia": "SÁBADO 05/12",
+            "nombre": "F1 - Clasificación",
+            "fechaUtc": "2026-12-05T14:00:00Z",
+            "horaOriginal": "18:00 Local (+04)",
+            "destacado": true
+          },
+          {
+            "dia": "DOMINGO 06/12",
+            "nombre": "F1 - Carrera Principal",
+            "fechaUtc": "2026-12-06T13:00:00Z",
+            "horaOriginal": "17:00 Local (+04)",
             "destacado": true
           }
         ]
