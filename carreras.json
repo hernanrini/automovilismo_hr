@@ -1,193 +1,8 @@
 [
   {
     "semana": 1,
-    "tituloSemana": "Fin de semana 04/10",
-    "estado": "FIN DE SEMANA ACTUAL",
-    "eventos": [
-      {
-        "categoria": "FORMULA 1",
-        "categoriaClase": "f1",
-        "evento": "Bahrain Grand Prix in Malaysia",
-        "circuito": "Sepang International Circuit",
-        "logoUrl": "",
-        "sesiones": [
-          {
-            "dia": "VIERNES 02/10",
-            "nombre": "F1 - Prácticas Libres 1",
-            "fechaUtc": "2026-10-02T04:30:00Z",
-            "horaOriginal": "04:30 Local (UTC)",
-            "destacado": false
-          },
-          {
-            "dia": "VIERNES 02/10",
-            "nombre": "F1 - Prácticas Libres 2",
-            "fechaUtc": "2026-10-02T08:00:00Z",
-            "horaOriginal": "08:00 Local (UTC)",
-            "destacado": false
-          },
-          {
-            "dia": "SÁBADO 03/10",
-            "nombre": "F1 - Prácticas Libres 3",
-            "fechaUtc": "2026-10-03T04:30:00Z",
-            "horaOriginal": "04:30 Local (UTC)",
-            "destacado": false
-          },
-          {
-            "dia": "SÁBADO 03/10",
-            "nombre": "F1 - Clasificación",
-            "fechaUtc": "2026-10-03T08:00:00Z",
-            "horaOriginal": "08:00 Local (UTC)",
-            "destacado": true
-          },
-          {
-            "dia": "DOMINGO 04/10",
-            "nombre": "F1 - Carrera Principal",
-            "fechaUtc": "2026-10-04T07:00:00Z",
-            "horaOriginal": "07:00 Local (UTC)",
-            "destacado": true
-          }
-        ]
-      },
-      {
-        "categoria": "WRC",
-        "categoriaClase": "wrc",
-        "evento": "Rally Italia Sardegna",
-        "circuito": "Cerdeña (Italia)",
-        "logoUrl": "",
-        "sesiones": [
-          {
-            "dia": "JUEVES 01/10",
-            "nombre": "Shakedown",
-            "fechaUtc": "2026-10-01T08:00:00Z",
-            "horaOriginal": "08:00 UTC",
-            "destacado": false
-          },
-          {
-            "dia": "SÁBADO 03/10",
-            "nombre": "Etapa - Tramos Especiales",
-            "fechaUtc": "2026-10-03T07:00:00Z",
-            "horaOriginal": "07:00 UTC",
-            "destacado": false
-          },
-          {
-            "dia": "DOMINGO 04/10",
-            "nombre": "Wolf Power Stage Final",
-            "fechaUtc": "2026-10-04T10:15:00Z",
-            "horaOriginal": "10:15 UTC",
-            "destacado": true
-          }
-        ]
-      },
-      {
-        "categoria": "NASCAR CUP SERIES",
-        "categoriaClase": "nascar",
-        "evento": "South Point 400",
-        "circuito": "Las Vegas Motor Speedway (EE.UU.)",
-        "logoUrl": "",
-        "sesiones": [
-          {
-            "dia": "SÁBADO 03/10",
-            "nombre": "NASCAR Xfinity Series - Clasificación",
-            "fechaUtc": "2026-10-03T19:05:00Z",
-            "horaOriginal": "19:05 UTC",
-            "destacado": false
-          },
-          {
-            "dia": "SÁBADO 03/10",
-            "nombre": "NASCAR Cup Series - Clasificación",
-            "fechaUtc": "2026-10-03T21:35:00Z",
-            "horaOriginal": "21:35 UTC",
-            "destacado": true
-          },
-          {
-            "dia": "SÁBADO 03/10",
-            "nombre": "NASCAR Xfinity Series - Carrera (Focused Health 302)",
-            "fechaUtc": "2026-10-03T23:30:00Z",
-            "horaOriginal": "23:30 UTC",
-            "destacado": false
-          },
-          {
-            "dia": "DOMINGO 04/10",
-            "nombre": "NASCAR Cup Series - Carrera - Principal (South Point 400)",
-            "fechaUtc": "2026-10-04T21:30:00Z",
-            "horaOriginal": "21:30 UTC",
-            "destacado": true
-          }
-        ]
-      },
-      {
-        "categoria": "Turismo Carretera & TC Pista",
-        "categoriaClase": "tc",
-        "evento": "Turismo Carretera - Fecha 12",
-        "circuito": "Autódromo Ciudad de San Nicolás (Buenos Aires)",
-        "logoUrl": "",
-        "sesiones": [
-          {
-            "dia": "SÁBADO 03/10",
-            "nombre": "TC Pista - Clasificación",
-            "fechaUtc": "2026-10-03T11:00:00Z",
-            "horaOriginal": "11:00 UTC",
-            "destacado": false
-          },
-          {
-            "dia": "SÁBADO 03/10",
-            "nombre": "TC - Entrenamientos & Clasificación",
-            "fechaUtc": "2026-10-03T13:00:00Z",
-            "horaOriginal": "13:00 UTC",
-            "destacado": false
-          },
-          {
-            "dia": "DOMINGO 04/10",
-            "nombre": "TC Pista - Series / Final",
-            "fechaUtc": "2026-10-04T11:00:00Z",
-            "horaOriginal": "11:00 UTC",
-            "destacado": false
-          },
-          {
-            "dia": "DOMINGO 04/10",
-            "nombre": "TC - Series Clasificatorias",
-            "fechaUtc": "2026-10-04T13:00:00Z",
-            "horaOriginal": "13:00 UTC",
-            "destacado": false
-          },
-          {
-            "dia": "DOMINGO 04/10",
-            "nombre": "Turismo Carretera - Fecha 12 - Final",
-            "fechaUtc": "2026-10-04T17:00:00Z",
-            "horaOriginal": "17:00 UTC",
-            "destacado": true
-          }
-        ]
-      },
-      {
-        "categoria": "MOTOGP",
-        "categoriaClase": "motogp",
-        "evento": "Motul Grand Prix of Japan",
-        "circuito": "Mobility Resort Motegi",
-        "logoUrl": "",
-        "sesiones": [
-          {
-            "dia": "SÁBADO 03/10",
-            "nombre": "MotoGP - Carrera Sprint",
-            "fechaUtc": "2026-10-03T13:00:00Z",
-            "horaOriginal": "13:00 UTC",
-            "destacado": true
-          },
-          {
-            "dia": "DOMINGO 04/10",
-            "nombre": "MotoGP - Carrera Principal",
-            "fechaUtc": "2026-10-04T12:00:00Z",
-            "horaOriginal": "12:00 UTC",
-            "destacado": true
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "semana": 2,
     "tituloSemana": "Fin de semana 11/10",
-    "estado": "PRÓXIMO FIN DE SEMANA",
+    "estado": "FIN DE SEMANA ACTUAL",
     "eventos": [
       {
         "categoria": "FORMULA 1",
@@ -270,7 +85,7 @@
           },
           {
             "dia": "SÁBADO 10/10",
-            "nombre": "NASCAR Xfinity Series - Carrera (Blue Cross NC 250)",
+            "nombre": "NASCAR Xfinity Series - Carrera (Blue Cross NC 300)",
             "fechaUtc": "2026-10-10T20:00:00Z",
             "horaOriginal": "20:00 UTC",
             "destacado": false
@@ -310,9 +125,9 @@
     ]
   },
   {
-    "semana": 3,
+    "semana": 2,
     "tituloSemana": "Fin de semana 18/10",
-    "estado": "FUTURO",
+    "estado": "PRÓXIMO FIN DE SEMANA",
     "eventos": [
       {
         "categoria": "NASCAR CUP SERIES",
@@ -368,7 +183,7 @@
     ]
   },
   {
-    "semana": 4,
+    "semana": 3,
     "tituloSemana": "Fin de semana 25/10",
     "estado": "FUTURO",
     "eventos": [
@@ -417,6 +232,57 @@
         ]
       },
       {
+        "categoria": "NASCAR CUP SERIES",
+        "categoriaClase": "nascar",
+        "evento": "YellaWood 500",
+        "circuito": "Talladega Superspeedway (EE.UU.)",
+        "logoUrl": "",
+        "sesiones": [
+          {
+            "dia": "VIERNES 23/10",
+            "nombre": "NASCAR Craftsman Truck Series - Clasificación",
+            "fechaUtc": "2026-10-23T16:30:00Z",
+            "horaOriginal": "16:30 UTC",
+            "destacado": false
+          },
+          {
+            "dia": "VIERNES 23/10",
+            "nombre": "NASCAR Craftsman Truck Series - Carrera (Love's RV Stop 225)",
+            "fechaUtc": "2026-10-23T20:00:00Z",
+            "horaOriginal": "20:00 UTC",
+            "destacado": false
+          },
+          {
+            "dia": "SÁBADO 24/10",
+            "nombre": "NASCAR Xfinity Series - Clasificación",
+            "fechaUtc": "2026-10-24T15:00:00Z",
+            "horaOriginal": "15:00 UTC",
+            "destacado": false
+          },
+          {
+            "dia": "SÁBADO 24/10",
+            "nombre": "NASCAR Cup Series - Clasificación",
+            "fechaUtc": "2026-10-24T17:00:00Z",
+            "horaOriginal": "17:00 UTC",
+            "destacado": true
+          },
+          {
+            "dia": "SÁBADO 24/10",
+            "nombre": "NASCAR Xfinity Series - Carrera (The Progress Group 250)",
+            "fechaUtc": "2026-10-24T19:30:00Z",
+            "horaOriginal": "19:30 UTC",
+            "destacado": false
+          },
+          {
+            "dia": "DOMINGO 25/10",
+            "nombre": "NASCAR Cup Series - Carrera - Principal (YellaWood 500)",
+            "fechaUtc": "2026-10-25T18:00:00Z",
+            "horaOriginal": "18:00 UTC",
+            "destacado": true
+          }
+        ]
+      },
+      {
         "categoria": "MOTOGP",
         "categoriaClase": "motogp",
         "evento": "GRAND PRIX OF AUSTRALIA ",
@@ -442,7 +308,7 @@
     ]
   },
   {
-    "semana": 5,
+    "semana": 4,
     "tituloSemana": "Fin de semana 01/11",
     "estado": "FUTURO",
     "eventos": [
@@ -560,7 +426,7 @@
     ]
   },
   {
-    "semana": 6,
+    "semana": 5,
     "tituloSemana": "Fin de semana 08/11",
     "estado": "FUTURO",
     "eventos": [
@@ -664,7 +530,7 @@
     ]
   },
   {
-    "semana": 7,
+    "semana": 6,
     "tituloSemana": "Fin de semana 14/11",
     "estado": "FUTURO",
     "eventos": [
@@ -701,7 +567,7 @@
     ]
   },
   {
-    "semana": 8,
+    "semana": 7,
     "tituloSemana": "Fin de semana 22/11",
     "estado": "FUTURO",
     "eventos": [
@@ -775,7 +641,7 @@
     ]
   },
   {
-    "semana": 9,
+    "semana": 8,
     "tituloSemana": "Fin de semana 29/11",
     "estado": "FUTURO",
     "eventos": [
@@ -893,7 +759,7 @@
     ]
   },
   {
-    "semana": 10,
+    "semana": 9,
     "tituloSemana": "Fin de semana 06/12",
     "estado": "FUTURO",
     "eventos": [
