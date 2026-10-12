@@ -1,133 +1,8 @@
 [
   {
     "semana": 1,
-    "tituloSemana": "Fin de semana 11/10",
-    "estado": "FIN DE SEMANA ACTUAL",
-    "eventos": [
-      {
-        "categoria": "FORMULA 1",
-        "categoriaClase": "f1",
-        "evento": "Singapore Grand Prix",
-        "circuito": "Marina Bay Street Circuit",
-        "logoUrl": "",
-        "sesiones": [
-          {
-            "dia": "VIERNES 09/10",
-            "nombre": "F1 - Prácticas Libres 1",
-            "fechaUtc": "2026-10-09T08:30:00Z",
-            "horaOriginal": "08:30 Local (UTC)",
-            "destacado": false
-          },
-          {
-            "dia": "VIERNES 09/10",
-            "nombre": "F1 - Clasificación Sprint",
-            "fechaUtc": "2026-10-09T12:30:00Z",
-            "horaOriginal": "12:30 Local (UTC)",
-            "destacado": false
-          },
-          {
-            "dia": "SÁBADO 10/10",
-            "nombre": "F1 - Carrera Sprint",
-            "fechaUtc": "2026-10-10T09:00:00Z",
-            "horaOriginal": "09:00 Local (UTC)",
-            "destacado": true
-          },
-          {
-            "dia": "SÁBADO 10/10",
-            "nombre": "F1 - Clasificación",
-            "fechaUtc": "2026-10-10T13:00:00Z",
-            "horaOriginal": "13:00 Local (UTC)",
-            "destacado": true
-          },
-          {
-            "dia": "DOMINGO 11/10",
-            "nombre": "F1 - Carrera Principal",
-            "fechaUtc": "2026-10-11T12:00:00Z",
-            "horaOriginal": "12:00 Local (UTC)",
-            "destacado": true
-          }
-        ]
-      },
-      {
-        "categoria": "NASCAR CUP SERIES",
-        "categoriaClase": "nascar",
-        "evento": "Bank of America 400",
-        "circuito": "Charlotte Motor Speedway (EE.UU.)",
-        "logoUrl": "",
-        "sesiones": [
-          {
-            "dia": "VIERNES 09/10",
-            "nombre": "NASCAR Craftsman Truck Series - Clasificación",
-            "fechaUtc": "2026-10-09T18:05:00Z",
-            "horaOriginal": "18:05 UTC",
-            "destacado": false
-          },
-          {
-            "dia": "VIERNES 09/10",
-            "nombre": "NASCAR Craftsman Truck Series - Carrera (Ecosave 200)",
-            "fechaUtc": "2026-10-09T21:00:00Z",
-            "horaOriginal": "21:00 UTC",
-            "destacado": false
-          },
-          {
-            "dia": "SÁBADO 10/10",
-            "nombre": "NASCAR Xfinity Series - Clasificación",
-            "fechaUtc": "2026-10-10T15:35:00Z",
-            "horaOriginal": "15:35 UTC",
-            "destacado": false
-          },
-          {
-            "dia": "SÁBADO 10/10",
-            "nombre": "NASCAR Cup Series - Clasificación",
-            "fechaUtc": "2026-10-10T18:05:00Z",
-            "horaOriginal": "18:05 UTC",
-            "destacado": true
-          },
-          {
-            "dia": "SÁBADO 10/10",
-            "nombre": "NASCAR Xfinity Series - Carrera (Blue Cross NC 300)",
-            "fechaUtc": "2026-10-10T20:00:00Z",
-            "horaOriginal": "20:00 UTC",
-            "destacado": false
-          },
-          {
-            "dia": "DOMINGO 11/10",
-            "nombre": "NASCAR Cup Series - Carrera - Principal (Bank of America 400)",
-            "fechaUtc": "2026-10-11T19:00:00Z",
-            "horaOriginal": "19:00 UTC",
-            "destacado": true
-          }
-        ]
-      },
-      {
-        "categoria": "MOTOGP",
-        "categoriaClase": "motogp",
-        "evento": "Pertamina Grand Prix of Indonesia",
-        "circuito": "Pertamina Mandalika Circuit",
-        "logoUrl": "",
-        "sesiones": [
-          {
-            "dia": "SÁBADO 10/10",
-            "nombre": "MotoGP - Carrera Sprint",
-            "fechaUtc": "2026-10-10T13:00:00Z",
-            "horaOriginal": "13:00 UTC",
-            "destacado": true
-          },
-          {
-            "dia": "DOMINGO 11/10",
-            "nombre": "MotoGP - Carrera Principal",
-            "fechaUtc": "2026-10-11T12:00:00Z",
-            "horaOriginal": "12:00 UTC",
-            "destacado": true
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "semana": 2,
     "tituloSemana": "Fin de semana 18/10",
-    "estado": "PRÓXIMO FIN DE SEMANA",
+    "estado": "FIN DE SEMANA ACTUAL",
     "eventos": [
       {
         "categoria": "NASCAR CUP SERIES",
@@ -174,6 +49,13 @@
           {
             "dia": "DOMINGO 18/10",
             "nombre": "NASCAR Cup Series - Carrera - Principal (Freeway Insurance 500)",
+            "fechaUtc": "2026-10-18T18:00:00Z",
+            "horaOriginal": "18:00 UTC",
+            "destacado": true
+          },
+          {
+            "dia": "DOMINGO 18/10",
+            "nombre": "NASCAR Cup Series - Carrera - Principal (Freeway Insurance 500)",
             "fechaUtc": "2026-10-18T19:00:00Z",
             "horaOriginal": "19:00 UTC",
             "destacado": true
@@ -183,9 +65,9 @@
     ]
   },
   {
-    "semana": 3,
+    "semana": 2,
     "tituloSemana": "Fin de semana 25/10",
-    "estado": "FUTURO",
+    "estado": "PRÓXIMO FIN DE SEMANA",
     "eventos": [
       {
         "categoria": "FORMULA 1",
@@ -308,7 +190,7 @@
     ]
   },
   {
-    "semana": 4,
+    "semana": 3,
     "tituloSemana": "Fin de semana 01/11",
     "estado": "FUTURO",
     "eventos": [
@@ -352,6 +234,57 @@
             "nombre": "F1 - Carrera Principal",
             "fechaUtc": "2026-11-01T20:00:00Z",
             "horaOriginal": "14:00 Local (CST)",
+            "destacado": true
+          }
+        ]
+      },
+      {
+        "categoria": "NASCAR CUP SERIES",
+        "categoriaClase": "nascar",
+        "evento": "Xfinity 500",
+        "circuito": "Martinsville Speedway (EE.UU.)",
+        "logoUrl": "",
+        "sesiones": [
+          {
+            "dia": "VIERNES 30/10",
+            "nombre": "NASCAR Craftsman Truck Series - Clasificación",
+            "fechaUtc": "2026-10-30T17:35:00Z",
+            "horaOriginal": "17:35 UTC",
+            "destacado": false
+          },
+          {
+            "dia": "VIERNES 30/10",
+            "nombre": "NASCAR Xfinity Series - Clasificación",
+            "fechaUtc": "2026-10-30T20:05:00Z",
+            "horaOriginal": "20:05 UTC",
+            "destacado": false
+          },
+          {
+            "dia": "VIERNES 30/10",
+            "nombre": "NASCAR Craftsman Truck Series - Carrera (NASCAR CRAFTSMAN Truck Series Race at Martinsville)",
+            "fechaUtc": "2026-10-30T22:00:00Z",
+            "horaOriginal": "22:00 UTC",
+            "destacado": false
+          },
+          {
+            "dia": "SÁBADO 31/10",
+            "nombre": "NASCAR Cup Series - Clasificación",
+            "fechaUtc": "2026-10-31T18:05:00Z",
+            "horaOriginal": "18:05 UTC",
+            "destacado": true
+          },
+          {
+            "dia": "SÁBADO 31/10",
+            "nombre": "NASCAR Xfinity Series - Carrera (NASCAR O'Reilly Auto Parts Series Race at Martinsville)",
+            "fechaUtc": "2026-10-31T20:00:00Z",
+            "horaOriginal": "20:00 UTC",
+            "destacado": false
+          },
+          {
+            "dia": "DOMINGO 01/11",
+            "nombre": "NASCAR Cup Series - Carrera - Principal (Xfinity 500)",
+            "fechaUtc": "2026-11-01T19:00:00Z",
+            "horaOriginal": "19:00 UTC",
             "destacado": true
           }
         ]
@@ -426,7 +359,7 @@
     ]
   },
   {
-    "semana": 5,
+    "semana": 4,
     "tituloSemana": "Fin de semana 08/11",
     "estado": "FUTURO",
     "eventos": [
@@ -530,7 +463,7 @@
     ]
   },
   {
-    "semana": 6,
+    "semana": 5,
     "tituloSemana": "Fin de semana 14/11",
     "estado": "FUTURO",
     "eventos": [
@@ -567,7 +500,7 @@
     ]
   },
   {
-    "semana": 7,
+    "semana": 6,
     "tituloSemana": "Fin de semana 22/11",
     "estado": "FUTURO",
     "eventos": [
@@ -641,7 +574,7 @@
     ]
   },
   {
-    "semana": 8,
+    "semana": 7,
     "tituloSemana": "Fin de semana 29/11",
     "estado": "FUTURO",
     "eventos": [
@@ -759,7 +692,7 @@
     ]
   },
   {
-    "semana": 9,
+    "semana": 8,
     "tituloSemana": "Fin de semana 06/12",
     "estado": "FUTURO",
     "eventos": [
