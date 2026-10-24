@@ -1,8 +1,6 @@
-# scrapers/tc_scraper.py
-
 from datetime import datetime, timezone, timedelta
 
-# Calendario oficial Turismo Carretera y TC Pista de la temporada 2026
+# Calendario oficial Turismo Carretera y TC Pista de la temporada 2026 (Verificado ACTC)
 CALENDARIO_TC_2026 = [
     {
         "numero": 1,
@@ -24,7 +22,7 @@ CALENDARIO_TC_2026 = [
     },
     {
         "numero": 4,
-        "circuito": "Autódromo Oscar Cabalén (Alta Gracia, Córdoba)",
+        "circuito": "Autódromo Concepción del Uruguay (Entre Ríos)",
         "inicio": "2026-04-18T09:00:00Z",
         "fin": "2026-04-19T17:00:00Z"
     },
@@ -36,13 +34,13 @@ CALENDARIO_TC_2026 = [
     },
     {
         "numero": 6,
-        "circuito": "Autódromo Ciudad de Rafaela (Santa Fe)",
+        "circuito": "Autódromo Oscar Cabalén (Alta Gracia, Córdoba)",
         "inicio": "2026-05-30T09:00:00Z",
         "fin": "2026-05-31T17:00:00Z"
     },
     {
         "numero": 7,
-        "circuito": "Autódromo Rosendo Hernández (San Luis)",
+        "circuito": "Autódromo Ciudad de Rafaela (Santa Fe)",
         "inicio": "2026-06-20T09:00:00Z",
         "fin": "2026-06-21T17:00:00Z"
     },
@@ -54,7 +52,7 @@ CALENDARIO_TC_2026 = [
     },
     {
         "numero": 9,
-        "circuito": "Autódromo San Juan Villicum (San Juan)",
+        "circuito": "Autódromo San Juan Villicum (Albardón, San Juan)",
         "inicio": "2026-08-01T09:00:00Z",
         "fin": "2026-08-02T17:00:00Z"
     },
@@ -66,7 +64,7 @@ CALENDARIO_TC_2026 = [
     },
     {
         "numero": 11,
-        "circuito": "Autódromo Rosendo Hernández - San Luis (Comienzo Copa de Oro)",
+        "circuito": "Autódromo Rosendo Hernández (San Luis) - Copa de Oro",
         "inicio": "2026-09-12T09:00:00Z",
         "fin": "2026-09-13T17:00:00Z"
     },
@@ -78,15 +76,21 @@ CALENDARIO_TC_2026 = [
     },
     {
         "numero": 13,
-        "circuito": "Autódromo de Rosario (Santa Fe)",
-        "inicio": "2026-10-31T09:00:00Z",
-        "fin": "2026-11-01T17:00:00Z"
+        "circuito": "Autódromo Juan Manuel Fangio (Rosario, Santa Fe)",
+        "inicio": "2026-10-24T09:00:00Z",
+        "fin": "2026-10-25T17:00:00Z"
     },
     {
         "numero": 14,
         "circuito": "Autódromo Parque Ciudad de Río Cuarto (Córdoba)",
-        "inicio": "2026-11-28T09:00:00Z",
-        "fin": "2026-11-29T17:00:00Z"
+        "inicio": "2026-11-14T09:00:00Z",
+        "fin": "2026-11-15T17:00:00Z"
+    },
+    {
+        "numero": 15,
+        "circuito": "Autódromo Roberto José Mouras (La Plata, Buenos Aires) - Gran Coronación",
+        "inicio": "2026-12-05T09:00:00Z",
+        "fin": "2026-12-06T17:00:00Z"
     }
 ]
 
@@ -141,7 +145,7 @@ def obtener_proximas_tc():
                 },
                 {
                     "dia": _formatear_dia(dt_domingo),
-                    "nombre": f"{nombre_evento} - Final",
+                    "nombre": "TC - Carrera Final",
                     "fechaUtc": dt_domingo.strftime("%Y-%m-%dT17:00:00Z"),
                     "horaOriginal": "17:00 UTC",
                     "destacado": True
@@ -163,7 +167,7 @@ def obtener_proximas_tc():
         for ev in proximos_eventos:
             ev.pop("_dt_orden", None)
 
-        return proximos_eventos[:3]
+        return proximos_eventos
 
     except Exception as e:
         print(f"⚠️ Error procesando TC y TC Pista: {e}")
