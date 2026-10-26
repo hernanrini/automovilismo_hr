@@ -1,149 +1,8 @@
 [
   {
     "semana": 1,
-    "tituloSemana": "Fin de semana 25/10",
-    "estado": "FIN DE SEMANA ACTUAL",
-    "eventos": [
-      {
-        "categoria": "FORMULA 1",
-        "categoriaClase": "f1",
-        "evento": "United States Grand Prix",
-        "circuito": "Circuit of the Americas",
-        "logoUrl": "",
-        "sesiones": [
-          {
-            "dia": "VIERNES 23/10",
-            "nombre": "F1 - Prácticas Libres 1",
-            "fechaUtc": "2026-10-23T17:30:00Z",
-            "horaOriginal": "12:30 Local (CDT)",
-            "destacado": false
-          },
-          {
-            "dia": "VIERNES 23/10",
-            "nombre": "F1 - Prácticas Libres 2",
-            "fechaUtc": "2026-10-23T21:00:00Z",
-            "horaOriginal": "16:00 Local (CDT)",
-            "destacado": false
-          },
-          {
-            "dia": "SÁBADO 24/10",
-            "nombre": "F1 - Prácticas Libres 3",
-            "fechaUtc": "2026-10-24T17:30:00Z",
-            "horaOriginal": "12:30 Local (CDT)",
-            "destacado": false
-          },
-          {
-            "dia": "SÁBADO 24/10",
-            "nombre": "F1 - Clasificación",
-            "fechaUtc": "2026-10-24T21:00:00Z",
-            "horaOriginal": "16:00 Local (CDT)",
-            "destacado": true
-          },
-          {
-            "dia": "DOMINGO 25/10",
-            "nombre": "F1 - Carrera Principal",
-            "fechaUtc": "2026-10-25T20:00:00Z",
-            "horaOriginal": "15:00 Local (CDT)",
-            "destacado": true
-          }
-        ]
-      },
-      {
-        "categoria": "NASCAR CUP SERIES",
-        "categoriaClase": "nascar",
-        "evento": "YellaWood 500",
-        "circuito": "Talladega Superspeedway (EE.UU.)",
-        "logoUrl": "",
-        "sesiones": [
-          {
-            "dia": "SÁBADO 24/10",
-            "nombre": "NASCAR Xfinity Series - Carrera",
-            "fechaUtc": "2026-10-24T15:30:00Z",
-            "horaOriginal": "15:30 UTC",
-            "destacado": false
-          },
-          {
-            "dia": "DOMINGO 25/10",
-            "nombre": "NASCAR Cup Series - Carrera",
-            "fechaUtc": "2026-10-25T14:00:00Z",
-            "horaOriginal": "14:00 UTC",
-            "destacado": true
-          }
-        ]
-      },
-      {
-        "categoria": "Turismo Carretera & TC Pista",
-        "categoriaClase": "tc",
-        "evento": "Turismo Carretera - Fecha 13",
-        "circuito": "Autódromo Juan Manuel Fangio (Rosario, Santa Fe)",
-        "logoUrl": "",
-        "sesiones": [
-          {
-            "dia": "SÁBADO 24/10",
-            "nombre": "TC Pista - Clasificación",
-            "fechaUtc": "2026-10-24T11:00:00Z",
-            "horaOriginal": "11:00 UTC",
-            "destacado": false
-          },
-          {
-            "dia": "SÁBADO 24/10",
-            "nombre": "TC - Entrenamientos & Clasificación",
-            "fechaUtc": "2026-10-24T13:00:00Z",
-            "horaOriginal": "13:00 UTC",
-            "destacado": false
-          },
-          {
-            "dia": "DOMINGO 25/10",
-            "nombre": "TC Pista - Series / Final",
-            "fechaUtc": "2026-10-25T11:00:00Z",
-            "horaOriginal": "11:00 UTC",
-            "destacado": false
-          },
-          {
-            "dia": "DOMINGO 25/10",
-            "nombre": "TC - Series Clasificatorias",
-            "fechaUtc": "2026-10-25T13:00:00Z",
-            "horaOriginal": "13:00 UTC",
-            "destacado": false
-          },
-          {
-            "dia": "DOMINGO 25/10",
-            "nombre": "TC - Carrera Final",
-            "fechaUtc": "2026-10-25T17:00:00Z",
-            "horaOriginal": "17:00 UTC",
-            "destacado": true
-          }
-        ]
-      },
-      {
-        "categoria": "MOTOGP",
-        "categoriaClase": "motogp",
-        "evento": "RED BULL GRAND PRIX OF AUSTRALIA",
-        "circuito": "Phillip Island",
-        "logoUrl": "",
-        "sesiones": [
-          {
-            "dia": "SÁBADO 24/10",
-            "nombre": "MotoGP - Carrera Sprint",
-            "fechaUtc": "2026-10-24T13:00:00Z",
-            "horaOriginal": "13:00 UTC",
-            "destacado": true
-          },
-          {
-            "dia": "DOMINGO 25/10",
-            "nombre": "MotoGP - Carrera Principal",
-            "fechaUtc": "2026-10-25T12:00:00Z",
-            "horaOriginal": "12:00 UTC",
-            "destacado": true
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "semana": 2,
     "tituloSemana": "Fin de semana 01/11",
-    "estado": "PRÓXIMO FIN DE SEMANA",
+    "estado": "FIN DE SEMANA ACTUAL",
     "eventos": [
       {
         "categoria": "FORMULA 1",
@@ -198,23 +57,44 @@
         "sesiones": [
           {
             "dia": "VIERNES 30/10",
-            "nombre": "NASCAR Craftsman Truck Series - Carrera",
-            "fechaUtc": "2026-10-30T18:00:00Z",
-            "horaOriginal": "18:00 UTC",
+            "nombre": "NASCAR Craftsman Truck Series - Clasificación",
+            "fechaUtc": "2026-10-30T17:35:00Z",
+            "horaOriginal": "17:35 UTC",
+            "destacado": false
+          },
+          {
+            "dia": "VIERNES 30/10",
+            "nombre": "NASCAR Xfinity Series - Clasificación",
+            "fechaUtc": "2026-10-30T20:05:00Z",
+            "horaOriginal": "20:05 UTC",
+            "destacado": false
+          },
+          {
+            "dia": "VIERNES 30/10",
+            "nombre": "NASCAR Craftsman Truck Series - Carrera (Black's Tire 200 presented by Down East Heating & Air Conditioning)",
+            "fechaUtc": "2026-10-30T22:00:00Z",
+            "horaOriginal": "22:00 UTC",
             "destacado": false
           },
           {
             "dia": "SÁBADO 31/10",
-            "nombre": "NASCAR Xfinity Series - Carrera",
-            "fechaUtc": "2026-10-31T16:00:00Z",
-            "horaOriginal": "16:00 UTC",
+            "nombre": "NASCAR Cup Series - Clasificación",
+            "fechaUtc": "2026-10-31T18:05:00Z",
+            "horaOriginal": "18:05 UTC",
+            "destacado": true
+          },
+          {
+            "dia": "SÁBADO 31/10",
+            "nombre": "NASCAR Xfinity Series - Carrera (National Debt Relief 250)",
+            "fechaUtc": "2026-10-31T20:00:00Z",
+            "horaOriginal": "20:00 UTC",
             "destacado": false
           },
           {
             "dia": "DOMINGO 01/11",
-            "nombre": "NASCAR Cup Series - Carrera",
-            "fechaUtc": "2026-11-01T14:00:00Z",
-            "horaOriginal": "14:00 UTC",
+            "nombre": "NASCAR Cup Series - Carrera - Principal (Xfinity 500)",
+            "fechaUtc": "2026-11-01T19:00:00Z",
+            "horaOriginal": "19:00 UTC",
             "destacado": true
           }
         ]
@@ -245,9 +125,9 @@
     ]
   },
   {
-    "semana": 3,
+    "semana": 2,
     "tituloSemana": "Fin de semana 08/11",
-    "estado": "FUTURO",
+    "estado": "PRÓXIMO FIN DE SEMANA",
     "eventos": [
       {
         "categoria": "FORMULA 1",
@@ -302,23 +182,65 @@
         "sesiones": [
           {
             "dia": "VIERNES 06/11",
-            "nombre": "NASCAR Craftsman Truck Series - Carrera",
+            "nombre": "NASCAR Craftsman Truck Series - Clasificación",
             "fechaUtc": "2026-11-06T19:30:00Z",
             "horaOriginal": "19:30 UTC",
             "destacado": false
           },
           {
+            "dia": "VIERNES 06/11",
+            "nombre": "NASCAR Craftsman Truck Series - Carrera (NASCAR CRAFTSMAN Truck Series Championship Race)",
+            "fechaUtc": "2026-11-06T23:55:00Z",
+            "horaOriginal": "23:55 UTC",
+            "destacado": false
+          },
+          {
             "dia": "SÁBADO 07/11",
-            "nombre": "NASCAR Xfinity Series - Carrera",
-            "fechaUtc": "2026-11-07T17:00:00Z",
-            "horaOriginal": "17:00 UTC",
+            "nombre": "NASCAR Craftsman Truck Series - Carrera (NASCAR CRAFTSMAN Truck Series Championship Race)",
+            "fechaUtc": "2026-11-07T00:30:00Z",
+            "horaOriginal": "00:30 UTC",
+            "destacado": false
+          },
+          {
+            "dia": "SÁBADO 07/11",
+            "nombre": "NASCAR Xfinity Series - Clasificación",
+            "fechaUtc": "2026-11-07T18:00:00Z",
+            "horaOriginal": "18:00 UTC",
+            "destacado": false
+          },
+          {
+            "dia": "SÁBADO 07/11",
+            "nombre": "NASCAR Cup Series - Clasificación",
+            "fechaUtc": "2026-11-07T19:30:00Z",
+            "horaOriginal": "19:30 UTC",
+            "destacado": true
+          },
+          {
+            "dia": "SÁBADO 07/11",
+            "nombre": "NASCAR Xfinity Series - Carrera (NASCAR O'Reilly Auto Parts Series Championship Race)",
+            "fechaUtc": "2026-11-07T21:10:00Z",
+            "horaOriginal": "21:10 UTC",
+            "destacado": false
+          },
+          {
+            "dia": "SÁBADO 07/11",
+            "nombre": "NASCAR Xfinity Series - Carrera (NASCAR O'Reilly Auto Parts Series Championship Race)",
+            "fechaUtc": "2026-11-07T22:00:00Z",
+            "horaOriginal": "22:00 UTC",
             "destacado": false
           },
           {
             "dia": "DOMINGO 08/11",
-            "nombre": "NASCAR Cup Series - Carrera",
-            "fechaUtc": "2026-11-08T15:00:00Z",
-            "horaOriginal": "15:00 UTC",
+            "nombre": "NASCAR Cup Series - Carrera - Principal (NASCAR Championship Race)",
+            "fechaUtc": "2026-11-08T19:00:00Z",
+            "horaOriginal": "19:00 UTC",
+            "destacado": true
+          },
+          {
+            "dia": "DOMINGO 08/11",
+            "nombre": "NASCAR Cup Series - Carrera - Principal (NASCAR Championship Race)",
+            "fechaUtc": "2026-11-08T20:00:00Z",
+            "horaOriginal": "20:00 UTC",
             "destacado": true
           }
         ]
@@ -379,7 +301,7 @@
     ]
   },
   {
-    "semana": 4,
+    "semana": 3,
     "tituloSemana": "Fin de semana 15/11",
     "estado": "FUTURO",
     "eventos": [
@@ -460,7 +382,7 @@
     ]
   },
   {
-    "semana": 5,
+    "semana": 4,
     "tituloSemana": "Fin de semana 22/11",
     "estado": "FUTURO",
     "eventos": [
@@ -534,7 +456,7 @@
     ]
   },
   {
-    "semana": 6,
+    "semana": 5,
     "tituloSemana": "Fin de semana 29/11",
     "estado": "FUTURO",
     "eventos": [
@@ -608,7 +530,7 @@
     ]
   },
   {
-    "semana": 7,
+    "semana": 6,
     "tituloSemana": "Fin de semana 06/12",
     "estado": "FUTURO",
     "eventos": [
