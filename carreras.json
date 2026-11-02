@@ -1,133 +1,8 @@
 [
   {
     "semana": 1,
-    "tituloSemana": "Fin de semana 01/11",
-    "estado": "FIN DE SEMANA ACTUAL",
-    "eventos": [
-      {
-        "categoria": "FORMULA 1",
-        "categoriaClase": "f1",
-        "evento": "Mexico City Grand Prix",
-        "circuito": "Autódromo Hermanos Rodríguez",
-        "logoUrl": "",
-        "sesiones": [
-          {
-            "dia": "VIERNES 30/10",
-            "nombre": "F1 - Prácticas Libres 1",
-            "fechaUtc": "2026-10-30T18:30:00Z",
-            "horaOriginal": "12:30 Local (CST)",
-            "destacado": false
-          },
-          {
-            "dia": "VIERNES 30/10",
-            "nombre": "F1 - Prácticas Libres 2",
-            "fechaUtc": "2026-10-30T22:00:00Z",
-            "horaOriginal": "16:00 Local (CST)",
-            "destacado": false
-          },
-          {
-            "dia": "SÁBADO 31/10",
-            "nombre": "F1 - Prácticas Libres 3",
-            "fechaUtc": "2026-10-31T17:30:00Z",
-            "horaOriginal": "11:30 Local (CST)",
-            "destacado": false
-          },
-          {
-            "dia": "SÁBADO 31/10",
-            "nombre": "F1 - Clasificación",
-            "fechaUtc": "2026-10-31T21:00:00Z",
-            "horaOriginal": "15:00 Local (CST)",
-            "destacado": true
-          },
-          {
-            "dia": "DOMINGO 01/11",
-            "nombre": "F1 - Carrera Principal",
-            "fechaUtc": "2026-11-01T20:00:00Z",
-            "horaOriginal": "14:00 Local (CST)",
-            "destacado": true
-          }
-        ]
-      },
-      {
-        "categoria": "NASCAR CUP SERIES",
-        "categoriaClase": "nascar",
-        "evento": "Xfinity 500",
-        "circuito": "Martinsville Speedway (EE.UU.)",
-        "logoUrl": "",
-        "sesiones": [
-          {
-            "dia": "VIERNES 30/10",
-            "nombre": "NASCAR Craftsman Truck Series - Clasificación",
-            "fechaUtc": "2026-10-30T17:35:00Z",
-            "horaOriginal": "17:35 UTC",
-            "destacado": false
-          },
-          {
-            "dia": "VIERNES 30/10",
-            "nombre": "NASCAR Xfinity Series - Clasificación",
-            "fechaUtc": "2026-10-30T20:05:00Z",
-            "horaOriginal": "20:05 UTC",
-            "destacado": false
-          },
-          {
-            "dia": "VIERNES 30/10",
-            "nombre": "NASCAR Craftsman Truck Series - Carrera (Black's Tire 200 presented by Down East Heating & Air Conditioning)",
-            "fechaUtc": "2026-10-30T22:00:00Z",
-            "horaOriginal": "22:00 UTC",
-            "destacado": false
-          },
-          {
-            "dia": "SÁBADO 31/10",
-            "nombre": "NASCAR Cup Series - Clasificación",
-            "fechaUtc": "2026-10-31T18:05:00Z",
-            "horaOriginal": "18:05 UTC",
-            "destacado": true
-          },
-          {
-            "dia": "SÁBADO 31/10",
-            "nombre": "NASCAR Xfinity Series - Carrera (National Debt Relief 250)",
-            "fechaUtc": "2026-10-31T20:00:00Z",
-            "horaOriginal": "20:00 UTC",
-            "destacado": false
-          },
-          {
-            "dia": "DOMINGO 01/11",
-            "nombre": "NASCAR Cup Series - Carrera - Principal (Xfinity 500)",
-            "fechaUtc": "2026-11-01T19:00:00Z",
-            "horaOriginal": "19:00 UTC",
-            "destacado": true
-          }
-        ]
-      },
-      {
-        "categoria": "MOTOGP",
-        "categoriaClase": "motogp",
-        "evento": "Petronas Grand Prix of Malaysia",
-        "circuito": "Petronas Sepang International Circuit",
-        "logoUrl": "",
-        "sesiones": [
-          {
-            "dia": "SÁBADO 31/10",
-            "nombre": "MotoGP - Carrera Sprint",
-            "fechaUtc": "2026-10-31T13:00:00Z",
-            "horaOriginal": "13:00 UTC",
-            "destacado": true
-          },
-          {
-            "dia": "DOMINGO 01/11",
-            "nombre": "MotoGP - Carrera Principal",
-            "fechaUtc": "2026-11-01T12:00:00Z",
-            "horaOriginal": "12:00 UTC",
-            "destacado": true
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "semana": 2,
     "tituloSemana": "Fin de semana 08/11",
-    "estado": "PRÓXIMO FIN DE SEMANA",
+    "estado": "FIN DE SEMANA ACTUAL",
     "eventos": [
       {
         "categoria": "FORMULA 1",
@@ -301,9 +176,9 @@
     ]
   },
   {
-    "semana": 3,
+    "semana": 2,
     "tituloSemana": "Fin de semana 15/11",
-    "estado": "FUTURO",
+    "estado": "PRÓXIMO FIN DE SEMANA",
     "eventos": [
       {
         "categoria": "WRC",
@@ -382,7 +257,7 @@
     ]
   },
   {
-    "semana": 4,
+    "semana": 3,
     "tituloSemana": "Fin de semana 22/11",
     "estado": "FUTURO",
     "eventos": [
@@ -456,7 +331,7 @@
     ]
   },
   {
-    "semana": 5,
+    "semana": 4,
     "tituloSemana": "Fin de semana 29/11",
     "estado": "FUTURO",
     "eventos": [
@@ -530,7 +405,7 @@
     ]
   },
   {
-    "semana": 6,
+    "semana": 5,
     "tituloSemana": "Fin de semana 06/12",
     "estado": "FUTURO",
     "eventos": [
