@@ -1,184 +1,8 @@
 [
   {
     "semana": 1,
-    "tituloSemana": "Fin de semana 08/11",
-    "estado": "FIN DE SEMANA ACTUAL",
-    "eventos": [
-      {
-        "categoria": "FORMULA 1",
-        "categoriaClase": "f1",
-        "evento": "Brazilian Grand Prix",
-        "circuito": "Autódromo José Carlos Pace",
-        "logoUrl": "",
-        "sesiones": [
-          {
-            "dia": "VIERNES 06/11",
-            "nombre": "F1 - Prácticas Libres 1",
-            "fechaUtc": "2026-11-06T15:30:00Z",
-            "horaOriginal": "12:30 Local (-03)",
-            "destacado": false
-          },
-          {
-            "dia": "VIERNES 06/11",
-            "nombre": "F1 - Prácticas Libres 2",
-            "fechaUtc": "2026-11-06T19:00:00Z",
-            "horaOriginal": "16:00 Local (-03)",
-            "destacado": false
-          },
-          {
-            "dia": "SÁBADO 07/11",
-            "nombre": "F1 - Prácticas Libres 3",
-            "fechaUtc": "2026-11-07T14:30:00Z",
-            "horaOriginal": "11:30 Local (-03)",
-            "destacado": false
-          },
-          {
-            "dia": "SÁBADO 07/11",
-            "nombre": "F1 - Clasificación",
-            "fechaUtc": "2026-11-07T18:00:00Z",
-            "horaOriginal": "15:00 Local (-03)",
-            "destacado": true
-          },
-          {
-            "dia": "DOMINGO 08/11",
-            "nombre": "F1 - Carrera Principal",
-            "fechaUtc": "2026-11-08T17:00:00Z",
-            "horaOriginal": "14:00 Local (-03)",
-            "destacado": true
-          }
-        ]
-      },
-      {
-        "categoria": "NASCAR CUP SERIES",
-        "categoriaClase": "nascar",
-        "evento": "NASCAR Championship Race",
-        "circuito": "Homestead-Miami Speedway (EE.UU.)",
-        "logoUrl": "",
-        "sesiones": [
-          {
-            "dia": "VIERNES 06/11",
-            "nombre": "NASCAR Craftsman Truck Series - Clasificación",
-            "fechaUtc": "2026-11-06T19:30:00Z",
-            "horaOriginal": "19:30 UTC",
-            "destacado": false
-          },
-          {
-            "dia": "VIERNES 06/11",
-            "nombre": "NASCAR Craftsman Truck Series - Carrera (NASCAR CRAFTSMAN Truck Series Championship Race)",
-            "fechaUtc": "2026-11-06T23:55:00Z",
-            "horaOriginal": "23:55 UTC",
-            "destacado": false
-          },
-          {
-            "dia": "SÁBADO 07/11",
-            "nombre": "NASCAR Craftsman Truck Series - Carrera (NASCAR CRAFTSMAN Truck Series Championship Race)",
-            "fechaUtc": "2026-11-07T00:30:00Z",
-            "horaOriginal": "00:30 UTC",
-            "destacado": false
-          },
-          {
-            "dia": "SÁBADO 07/11",
-            "nombre": "NASCAR Xfinity Series - Clasificación",
-            "fechaUtc": "2026-11-07T18:00:00Z",
-            "horaOriginal": "18:00 UTC",
-            "destacado": false
-          },
-          {
-            "dia": "SÁBADO 07/11",
-            "nombre": "NASCAR Cup Series - Clasificación",
-            "fechaUtc": "2026-11-07T19:30:00Z",
-            "horaOriginal": "19:30 UTC",
-            "destacado": true
-          },
-          {
-            "dia": "SÁBADO 07/11",
-            "nombre": "NASCAR Xfinity Series - Carrera (NASCAR O'Reilly Auto Parts Series Championship Race)",
-            "fechaUtc": "2026-11-07T21:10:00Z",
-            "horaOriginal": "21:10 UTC",
-            "destacado": false
-          },
-          {
-            "dia": "SÁBADO 07/11",
-            "nombre": "NASCAR Xfinity Series - Carrera (NASCAR O'Reilly Auto Parts Series Championship Race)",
-            "fechaUtc": "2026-11-07T22:00:00Z",
-            "horaOriginal": "22:00 UTC",
-            "destacado": false
-          },
-          {
-            "dia": "DOMINGO 08/11",
-            "nombre": "NASCAR Cup Series - Carrera - Principal (NASCAR Championship Race)",
-            "fechaUtc": "2026-11-08T19:00:00Z",
-            "horaOriginal": "19:00 UTC",
-            "destacado": true
-          },
-          {
-            "dia": "DOMINGO 08/11",
-            "nombre": "NASCAR Cup Series - Carrera - Principal (NASCAR Championship Race)",
-            "fechaUtc": "2026-11-08T20:00:00Z",
-            "horaOriginal": "20:00 UTC",
-            "destacado": true
-          }
-        ]
-      },
-      {
-        "categoria": "WEC",
-        "categoriaClase": "wec",
-        "evento": "8 Hours of Bahrain",
-        "circuito": "Bahrain International Circuit (Sakhir, Baréin)",
-        "logoUrl": "",
-        "sesiones": [
-          {
-            "dia": "JUEVES 05/11",
-            "nombre": "Entrenamientos Libres",
-            "fechaUtc": "2026-11-05T10:00:00Z",
-            "horaOriginal": "10:00 UTC",
-            "destacado": false
-          },
-          {
-            "dia": "VIERNES 06/11",
-            "nombre": "Clasificación & Hyperpole",
-            "fechaUtc": "2026-11-06T13:00:00Z",
-            "horaOriginal": "13:00 UTC",
-            "destacado": false
-          },
-          {
-            "dia": "SÁBADO 07/11",
-            "nombre": "Carrera (8 Hours of Bahrain)",
-            "fechaUtc": "2026-11-07T11:00:00Z",
-            "horaOriginal": "11:00 UTC",
-            "destacado": true
-          }
-        ]
-      },
-      {
-        "categoria": "MOTOGP",
-        "categoriaClase": "motogp",
-        "evento": "Qatar Airways Grand Prix of Qatar",
-        "circuito": "Lusail International Circuit",
-        "logoUrl": "",
-        "sesiones": [
-          {
-            "dia": "SÁBADO 07/11",
-            "nombre": "MotoGP - Carrera Sprint",
-            "fechaUtc": "2026-11-07T13:00:00Z",
-            "horaOriginal": "13:00 UTC",
-            "destacado": true
-          },
-          {
-            "dia": "DOMINGO 08/11",
-            "nombre": "MotoGP - Carrera Principal",
-            "fechaUtc": "2026-11-08T12:00:00Z",
-            "horaOriginal": "12:00 UTC",
-            "destacado": true
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "semana": 2,
     "tituloSemana": "Fin de semana 15/11",
-    "estado": "PRÓXIMO FIN DE SEMANA",
+    "estado": "FIN DE SEMANA ACTUAL",
     "eventos": [
       {
         "categoria": "WRC",
@@ -257,9 +81,9 @@
     ]
   },
   {
-    "semana": 3,
+    "semana": 2,
     "tituloSemana": "Fin de semana 22/11",
-    "estado": "FUTURO",
+    "estado": "PRÓXIMO FIN DE SEMANA",
     "eventos": [
       {
         "categoria": "FORMULA 1",
@@ -331,7 +155,7 @@
     ]
   },
   {
-    "semana": 4,
+    "semana": 3,
     "tituloSemana": "Fin de semana 29/11",
     "estado": "FUTURO",
     "eventos": [
@@ -405,7 +229,7 @@
     ]
   },
   {
-    "semana": 5,
+    "semana": 4,
     "tituloSemana": "Fin de semana 06/12",
     "estado": "FUTURO",
     "eventos": [
