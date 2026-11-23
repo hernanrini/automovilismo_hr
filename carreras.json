@@ -1,127 +1,9 @@
 [
   {
     "semana": 1,
-    "tituloSemana": "Fin de semana 22/11",
+    "tituloSemana": "Fin de semana 29/11",
     "estado": "FIN DE SEMANA ACTUAL",
     "eventos": [
-      {
-        "categoria": "FORMULA 1",
-        "categoriaClase": "f1",
-        "evento": "Las Vegas Grand Prix",
-        "circuito": "Las Vegas Strip Street Circuit",
-        "logoUrl": "",
-        "sesiones": [
-          {
-            "dia": "VIERNES 20/11",
-            "nombre": "F1 - Prácticas Libres 1",
-            "fechaUtc": "2026-11-20T00:30:00Z",
-            "horaOriginal": "16:30 Local (PST)",
-            "destacado": false
-          },
-          {
-            "dia": "VIERNES 20/11",
-            "nombre": "F1 - Prácticas Libres 2",
-            "fechaUtc": "2026-11-20T04:00:00Z",
-            "horaOriginal": "20:00 Local (PST)",
-            "destacado": false
-          },
-          {
-            "dia": "SÁBADO 21/11",
-            "nombre": "F1 - Prácticas Libres 3",
-            "fechaUtc": "2026-11-21T00:30:00Z",
-            "horaOriginal": "16:30 Local (PST)",
-            "destacado": false
-          },
-          {
-            "dia": "SÁBADO 21/11",
-            "nombre": "F1 - Clasificación",
-            "fechaUtc": "2026-11-21T04:00:00Z",
-            "horaOriginal": "20:00 Local (PST)",
-            "destacado": true
-          },
-          {
-            "dia": "DOMINGO 22/11",
-            "nombre": "F1 - Carrera Principal",
-            "fechaUtc": "2026-11-22T04:00:00Z",
-            "horaOriginal": "20:00 Local (PST)",
-            "destacado": true
-          }
-        ]
-      },
-      {
-        "categoria": "MOTOGP",
-        "categoriaClase": "motogp",
-        "evento": "Repsol Grand Prix of Portugal",
-        "circuito": "Autódromo Internacional do Algarve",
-        "logoUrl": "",
-        "sesiones": [
-          {
-            "dia": "SÁBADO 21/11",
-            "nombre": "MotoGP - Carrera Sprint",
-            "fechaUtc": "2026-11-21T13:00:00Z",
-            "horaOriginal": "13:00 UTC",
-            "destacado": true
-          },
-          {
-            "dia": "DOMINGO 22/11",
-            "nombre": "MotoGP - Carrera Principal",
-            "fechaUtc": "2026-11-22T12:00:00Z",
-            "horaOriginal": "12:00 UTC",
-            "destacado": true
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "semana": 2,
-    "tituloSemana": "Fin de semana 29/11",
-    "estado": "PRÓXIMO FIN DE SEMANA",
-    "eventos": [
-      {
-        "categoria": "FORMULA 1",
-        "categoriaClase": "f1",
-        "evento": "Qatar Grand Prix",
-        "circuito": "Lusail International Circuit",
-        "logoUrl": "",
-        "sesiones": [
-          {
-            "dia": "VIERNES 27/11",
-            "nombre": "F1 - Prácticas Libres 1",
-            "fechaUtc": "2026-11-27T13:30:00Z",
-            "horaOriginal": "16:30 Local (+03)",
-            "destacado": false
-          },
-          {
-            "dia": "VIERNES 27/11",
-            "nombre": "F1 - Prácticas Libres 2",
-            "fechaUtc": "2026-11-27T17:00:00Z",
-            "horaOriginal": "20:00 Local (+03)",
-            "destacado": false
-          },
-          {
-            "dia": "SÁBADO 28/11",
-            "nombre": "F1 - Prácticas Libres 3",
-            "fechaUtc": "2026-11-28T14:30:00Z",
-            "horaOriginal": "17:30 Local (+03)",
-            "destacado": false
-          },
-          {
-            "dia": "SÁBADO 28/11",
-            "nombre": "F1 - Clasificación",
-            "fechaUtc": "2026-11-28T18:00:00Z",
-            "horaOriginal": "21:00 Local (+03)",
-            "destacado": true
-          },
-          {
-            "dia": "DOMINGO 29/11",
-            "nombre": "F1 - Carrera Principal",
-            "fechaUtc": "2026-11-29T16:00:00Z",
-            "horaOriginal": "19:00 Local (+03)",
-            "destacado": true
-          }
-        ]
-      },
       {
         "categoria": "MOTOGP",
         "categoriaClase": "motogp",
@@ -148,54 +30,10 @@
     ]
   },
   {
-    "semana": 3,
+    "semana": 2,
     "tituloSemana": "Fin de semana 06/12",
-    "estado": "FUTURO",
+    "estado": "PRÓXIMO FIN DE SEMANA",
     "eventos": [
-      {
-        "categoria": "FORMULA 1",
-        "categoriaClase": "f1",
-        "evento": "Abu Dhabi Grand Prix",
-        "circuito": "Yas Marina Circuit",
-        "logoUrl": "",
-        "sesiones": [
-          {
-            "dia": "VIERNES 04/12",
-            "nombre": "F1 - Prácticas Libres 1",
-            "fechaUtc": "2026-12-04T09:30:00Z",
-            "horaOriginal": "13:30 Local (+04)",
-            "destacado": false
-          },
-          {
-            "dia": "VIERNES 04/12",
-            "nombre": "F1 - Prácticas Libres 2",
-            "fechaUtc": "2026-12-04T13:00:00Z",
-            "horaOriginal": "17:00 Local (+04)",
-            "destacado": false
-          },
-          {
-            "dia": "SÁBADO 05/12",
-            "nombre": "F1 - Prácticas Libres 3",
-            "fechaUtc": "2026-12-05T10:30:00Z",
-            "horaOriginal": "14:30 Local (+04)",
-            "destacado": false
-          },
-          {
-            "dia": "SÁBADO 05/12",
-            "nombre": "F1 - Clasificación",
-            "fechaUtc": "2026-12-05T14:00:00Z",
-            "horaOriginal": "18:00 Local (+04)",
-            "destacado": true
-          },
-          {
-            "dia": "DOMINGO 06/12",
-            "nombre": "F1 - Carrera Principal",
-            "fechaUtc": "2026-12-06T13:00:00Z",
-            "horaOriginal": "17:00 Local (+04)",
-            "destacado": true
-          }
-        ]
-      },
       {
         "categoria": "Turismo Carretera & TC Pista",
         "categoriaClase": "tc",
